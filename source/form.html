@@ -68,10 +68,10 @@
         <fieldset class="form__owner-info">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
 
-          <label class="form__label form__label--input-text" for="">Email:*</label>
+          <label class="form__label form__label--input-text" for="owner-email">Email:*</label>
           <input class="form__input form__input--email" type="text" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
 
-          <label class="form__label form__label--input-text" for="">Телефон:*</label>
+          <label class="form__label form__label--input-text" for="owner-tel">Телефон:*</label>
           <input class="form__input form__input--tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
         </fieldset>
 
@@ -79,13 +79,13 @@
           <legend class="form__legend">Комментарий</legend>
 
           <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
-          <textarea class="form__textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="form__additional">
           <legend class="form__legend">Дополнительно</legend>
 
-          <input class="form__checkbox" type="checkbox" name="additional" value="sweetener" checked>
+          <input class="form__checkbox" type="checkbox" name="additional" id="sweetener" value="sweetener" checked>
           <label class="form__label form__label--input-checkbox" for="sweetener">Сахарозаменитель</label>
 
           <input class="form__checkbox" type="checkbox" name="additional" id="water" value="water">
