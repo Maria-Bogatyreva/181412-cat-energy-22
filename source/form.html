@@ -43,13 +43,13 @@
           <legend class="visually-hidden">Общая информация о коте</legend>
 
           <label class="form__label" for="">ИМЯ:*</label>
-          <input class="form__input-text" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+          <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
 
           <label class="form__label" for="">Вес (кг):*</label>
-          <input class="form__input-text" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+          <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
 
           <label class="form__label" for="">Возраст (лет):</label>
-          <input class="form__input-text" type="text" name="cat-age" id="cat-age" placeholder="7">
+          <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
         </fieldset>
 
         <fieldset class="form__programm">
@@ -64,6 +64,20 @@
           <input class="form__input-radio" type="radio" id="unknown" name="program"  value="unknown">
           <label for="weight-down">Не знаю (Нужен ваш совет)</label>
         </fieldset>
+
+        <fieldset class="form__owner-info">
+          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+
+          <label class="form__label" for="">Email:*</label>
+          <input class="form__input form__input--email" type="text" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+
+          <label class="form__label" for="">Телефон:*</label>
+          <input class="form__input form__input--tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
+
+
+        </fieldset>
+
+
 
 
 
