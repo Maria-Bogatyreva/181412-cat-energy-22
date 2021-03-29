@@ -35,7 +35,29 @@
     </header>
 
     <main class="page-main">
+      <h1>Подбор программы</h1>
+      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
+      <form class="form" action="https://echo.htmlacademy.ru" method="POST"  id="form">
+        <fieldset class="form__cat-info">
+          <legend class="visually-hidden">Общая информация о коте</legend>
+
+          <label class="form__label" for="">ИМЯ:*</label>
+          <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+
+          <label class="form__label" for="">Вес (кг):*</label>
+          <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+
+          <label class="form__label" for="">Возраст (лет):</label>
+          <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
+        </fieldset>
+
+
+
+
+
+        <button class="button form__button" type="submit">Отправить заявку</button>
+      </form>
     </main>
 
     <footer class="page-footer">
