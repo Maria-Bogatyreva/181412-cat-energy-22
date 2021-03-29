@@ -43,13 +43,26 @@
           <legend class="visually-hidden">Общая информация о коте</legend>
 
           <label class="form__label" for="">ИМЯ:*</label>
-          <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+          <input class="form__input-text" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
 
           <label class="form__label" for="">Вес (кг):*</label>
-          <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+          <input class="form__input-text" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
 
           <label class="form__label" for="">Возраст (лет):</label>
-          <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
+          <input class="form__input-text" type="text" name="cat-age" id="cat-age" placeholder="7">
+        </fieldset>
+
+        <fieldset class="form__programm">
+          <legend class="visually-hidden">Выберите подходящую программу</legend>
+
+          <input class="form__input-radio" type="radio" id="weight-down" name="program"  value="weight-down" checked>
+          <label for="weight-down">Похудение</label>
+
+          <input class="form__input-radio" type="radio" id="weight-up" name="program"  value="weight-up">
+          <label for="weight-down">Набор массы</label>
+
+          <input class="form__input-radio" type="radio" id="unknown" name="program"  value="unknown">
+          <label for="weight-down">Не знаю (Нужен ваш совет)</label>
         </fieldset>
 
 
