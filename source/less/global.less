@@ -1,0 +1,41 @@
+// Color
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --special_dark-grey: #444444;
+}
+
+// Подключение шрифтов
+@font-face {
+  font-family: "Oswald";
+  src:
+    url("../fonts/oswaldregular.woff2") format("woff2"),
+    url("../fonts/oswaldregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald Medium";
+  src:
+    url("../fonts/oswaldmedium.woff2") format("woff2"),
+    url("../fonts/oswaldmedium.woff") format("woff");
+}
+
+// Примеси
+.oswald-regular() {
+  font-family: Oswald, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.oswald-medium() {
+  font-family: "Oswald Medium", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.arial-regular() {
+  font-family: Arial;
+  font-weight: 400;
+}
+
+// Переменные
