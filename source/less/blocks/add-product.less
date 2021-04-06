@@ -1,0 +1,33 @@
+.add-product__link-title {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: @special_dark-grey-2;
+
+  .add-product__title {
+    .indent-reset;
+    .oswald-regular;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+.add-product__description {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 13px;
+  line-height: 14px;
+
+  p {/*Наверное, так нельзя...*/
+    .indent-reset;
+  }
+}
+
+.add-product__price {
+  text-align: right;
+}
+
+.add-product__button {
+  font-size: 16px;
+  line-height: 20px;
+}
