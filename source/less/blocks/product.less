@@ -15,14 +15,46 @@
 .product-content {
   display: grid;
   grid-template-columns: 50% 50%;
+  margin-bottom: 13px;
 }
 
-.product__description {
-  margin-bottom: 15px;
+.product__table {
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+
+  .product__value {
+    text-align: right;
+  }
 }
 
 .product__link-img {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.product__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.product--view-more {
+  text-align: center;
+
+  .product__link-title {
+    color: #111111;
+  }
+
+  .product__text {
+    font-size: 12px;
+    line-height: 16px;
+    .indent-reset;
+    margin-bottom: 21px;
+  }
+
+  .product__button--view-more {
+    color: @special_dark-grey;
+    background-color: @basic-grey;
+  }
 }
