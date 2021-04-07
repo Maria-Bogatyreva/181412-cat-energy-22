@@ -1,3 +1,16 @@
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+.page-header__logo {
+  outline: 3px solid salmon;
+  outline-offset: -3px;
+}
+
 .page-header__logo-image {
   width: 33px;
   height: 37px;

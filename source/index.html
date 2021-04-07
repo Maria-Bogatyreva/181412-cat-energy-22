@@ -7,19 +7,21 @@
   </head>
   <body class="page__body">
     <header class="page-header">
+      <div class="page-header__wrapper wrapper">
+        <div class="page-header__logo">
+          <a class="page-header__logo-image">
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
+          </a>
 
-      <a class="page-header__logo-image">
-        <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
-      </a>
-      <a class="page-header__logo-caption">
-        <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
-      </a>
+          <a class="page-header__logo-caption">
+            <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
+          </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a>Главная</a>
@@ -31,8 +33,8 @@
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
+        </nav>
         </div>
-      </nav>
     </header>
 
     <main class="page-main">
@@ -44,7 +46,7 @@
             <h2 class="promo__title">Функциональное питание для котов</h2>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
           </div>
-          <img class="promo__image" src="img/promo-image.png" alt="Питание для котов">
+          <!--<img class="promo__image" src="img/promo-image.png" alt="Питание для котов">-->
           <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
