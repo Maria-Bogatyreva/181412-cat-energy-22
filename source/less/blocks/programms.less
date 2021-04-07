@@ -1,14 +1,30 @@
+.programms {
+  margin-top: 23px;
+  margin-bottom: 45px;
+}
+
 .programms__list {
   list-style: none;
   .indent-reset;
+  display: grid;
+  grid-row-gap: 20px;
+
+  @media (min-width: @tablet-width) {
+    grid-row-gap: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 570px 570px;
+    grid-column-gap: 80px;
+  }
 }
 
 .programms__item {
-  margin-top: 23px;
   background-color: @basic-grey;
   box-sizing: border-box;
   padding-left: 20px;
-  padding-bottom: 18px;
+  outline: 3px solid salmon;
+  outline-offset: -3px;
 }
 
 .programms__title {

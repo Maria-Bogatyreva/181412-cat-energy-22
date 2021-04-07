@@ -1,10 +1,12 @@
+.technology {
+
+}
 .technology__title {
   .indent-reset;
   .oswald-regular;
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
-  margin-top: 32px;
   margin-bottom: 40px;
 }
 
@@ -12,4 +14,57 @@
   list-style: none;
   .indent-reset;
   margin-bottom: 42px;
+  display: grid;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 132px 132px 132px 132px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    grid-template-rows: 1fr;
+    grid-gap: 80px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .technology__item--structure {
+    grid-column-start: 1;
+  }
+
+  .technology__item--release {
+    grid-column-start: 3;
+  }
+
+  .technology__item--schedule {
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  .technology__item--change {
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .technology__item--structure {
+    grid-column-start: 1;
+  }
+
+  .technology__item--release {
+    grid-column-start: 2;
+  }
+
+  .technology__item--schedule {
+    grid-column-start: 3;
+    grid-row-start: 1;
+  }
+
+  .technology__item--change {
+    grid-column-start: 4;
+    grid-row-start: 1;
+  }
 }

@@ -1,5 +1,6 @@
 .page-header__wrapper {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
@@ -19,4 +20,10 @@
 .page-header__logo-caption {
   width: 101px;
   height: 18px;
+}
+
+.page-header__toggle {
+   @media (min-width: @tablet-width) and (min-width: @desktop-width) {
+    display: none;
+   }
 }
