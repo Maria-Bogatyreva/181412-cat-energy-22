@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  color: @basic-white;;
+  color: @basic-white;
   height: 477px;
   background-image: url("../img/background-img.jpg"); //зеленый кот
   background-repeat: no-repeat;
@@ -17,6 +17,24 @@
   @media (min-width: @desktop-width) {
     height: 530px;
     padding-top: 104px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo::after {
+    content: "";
+    width: 720px;
+    height: 694px;
+    position: absolute;
+    top: -119px;
+    right: 230px;
+    background-image:
+      linear-gradient (
+        rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)
+      ),
+      url("../img/background-desktop.jpg");
+    z-index: -1;
   }
 }
 
