@@ -23,6 +23,17 @@
   background-color: @basic-grey;
   box-sizing: border-box;
   padding-left: 20px;
+  padding-bottom: 11px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 53px;
+    padding-bottom: 57px;
+    padding-right: 279px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+  }
 }
 
 .programms__title {
@@ -32,15 +43,38 @@
   color: @basic-black;
   font-size: 24px;
   line-height: 37px;
-  padding-top: 30px;
-  padding-bottom: 29px;
+  margin-top: 30px;
+  margin-bottom: 29px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-top: 77px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 161px;
+    margin-bottom: 75px;
+
+  }
 }
 
 .programms__description {
   .indent-reset;
   text-align: left;
   padding-right: 20px;
-  padding-bottom: 30px;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .programms__link {
@@ -50,4 +84,9 @@
   line-height: 16px;
   .oswald-regular;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
