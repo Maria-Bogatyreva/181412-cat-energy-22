@@ -1,7 +1,10 @@
 .demonstration {
   background-color: @basic-grey-2;
-  padding-top: 27px;
-  padding-bottom: 31px;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+  }
 }
 
 .demonstration__title {
@@ -11,10 +14,21 @@
   line-height: 40px;
   color: @basic-black;
   margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 66px;
+  }
 }
 
 .demonstration__description {
   .indent-reset;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .demonstration__list {
@@ -22,10 +36,17 @@
   flex-wrap: wrap;
   .indent-reset;
   margin-top: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
 }
 
 .demonstration__item {
-  width: 50%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -37,6 +58,7 @@
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 15px;
+    .indent-reset;
   }
 
   .demonstration__parameter {
@@ -46,8 +68,21 @@
   }
 }
 
-.demonstration__item-cost {
-  width: 100%;
+@media (min-width: @tablet-width) {
+  .demonstration__item {
+    .demonstration__explanation {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    .demonstration__parameter {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+}
+
+.demonstration__item--cost {
   display: flex;
   justify-content: center;
   margin-top: 24px;
@@ -56,8 +91,30 @@
   .oswald-regular;
   line-height: 20px;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    .indent-reset;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
-.demonstration__explanation {
-  .indent-reset;
+.demonstration__slider {
+  @media (min-width: @tablet-width) {
+    background-color: @basic-grey-2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .demonstration__wrapper {
+    display: flex;
+  }
+
+  .demonstration__slider {
+    width: 50%;
+  }
+
+  .demonstration__content {
+    width: 50%;
+  }
 }

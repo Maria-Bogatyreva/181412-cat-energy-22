@@ -2,24 +2,27 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи: интернет-магазин питания для котов</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
+      <div class="page-header__wrapper wrapper">
+        <div class="page-header__logo">
+          <a class="page-header__logo-image">
+            <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
+          </a>
 
-      <a class="page-header__logo-image">
-        <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
-      </a>
-      <a class="page-header__logo-caption">
-        <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
-      </a>
+          <a class="page-header__logo-caption">
+            <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
+          </a>
 
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
               <a>Главная</a>
@@ -31,8 +34,8 @@
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
+        </nav>
         </div>
-      </nav>
     </header>
 
     <main class="page-main">
@@ -43,11 +46,12 @@
           <div class="promo__content">
             <h2 class="promo__title">Функциональное питание для котов</h2>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            <img class="promo__image" src="img/promo-image.png" alt="Питание для котов">
+            <a class="promo__link button" href="form.html">Подобрать программу</a>
           </div>
-          <img class="promo__image" src="img/promo-image.png" alt="Питание для котов">
-          <a class="promo__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
+
 
       <section class="programms">
         <div class="wrapper">
@@ -88,27 +92,29 @@
       </section>
 
       <section class="demonstration">
-        <div class="wrapper">
-          <h3 class="demonstration__title">Живой пример</h3>
-          <p class="demonstration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-          <dl class="demonstration__list">
+        <div class="wrapper demonstration__wrapper">
+          <div class="demonstration__content">
+            <h3 class="demonstration__title">Живой пример</h3>
+            <p class="demonstration__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
-            <div class="demonstration__item">
-              <dt class="demonstration__parameter">снижение <br>веса</dt>
-              <dd class="demonstration__explanation">5 кг</dd>
-            </div>
+            <dl class="demonstration__list">
+              <div class="demonstration__item">
+                <dt class="demonstration__parameter">снижение <br>веса</dt>
+                <dd class="demonstration__explanation">5 кг</dd>
+              </div>
 
-            <div class="demonstration__item">
-              <dt class="demonstration__parameter">затрачено <br>времени</dt>
-              <dd class="demonstration__explanation">60 дней</dd>
-            </div>
+              <div class="demonstration__item">
+                <dt class="demonstration__parameter">затрачено <br>времени</dt>
+                <dd class="demonstration__explanation">60 дней</dd>
+              </div>
 
-            <div class="demonstration__item-cost">
-              <dt class="demonstration__parameter">Затраты на питание:</dt>
-              <dd class="demonstration__explanation">15 000 РУБ.</dd>
-            </div>
+              <div class="demonstration__item--cost">
+                <dt class="demonstration__parameter">Затраты на питание:</dt>
+                <dd class="demonstration__explanation">15 000 РУБ.</dd>
+              </div>
+            </dl>
+          </div>
 
-          </dl>
           <div class="demonstration__slider slider">
             <!--<img class="slider__img slider__img--active" src="img/before-mobile.png" alt="Толстый кот">--->
             <img class="slider__img" src="img/after-mobile.png" alt="Худой кот">
@@ -122,23 +128,20 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__top contacts">
-
-        <div class="page-footer__wrapper contacts__content">
-          <p class="contacts__partnership">Приглашаем к сотрудничеству дилеров!</p>
+      <div class="page-footer__top contacts wrapper">
+        <div class="page-footer__content contacts__content">
+          <p class="contacts__partnership">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-
-        <img class="contacts__map" src="img/location.jpg" width="320" height="362" alt="Наш адрес на карте">
       </div>
 
-      <div class="page-footer__bottom">
-        <div class="page-footer__wrapper">
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617980898292!5m2!1sru!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
+      <div class="page-footer__bottom">
+        <div class="wrapper page-footer__bottom-content">
           <a class="page-footer__logo-caption">
             <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
           </a>
-
           <div class="page-footer__social social">
             <ul class="social__list">
               <li class="social__item">
@@ -152,14 +155,12 @@
               </li>
             </ul>
           </div>
-
           <div class="page-footer__copyright copyright">
             <p class="copyright__text">HTML Academy</p>
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <img class="copyright__link-image" src="img/logo_htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
             </a>
           </div>
-
         </div>
       </div>
     </footer>
