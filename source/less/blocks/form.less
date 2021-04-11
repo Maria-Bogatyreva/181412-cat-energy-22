@@ -1,39 +1,97 @@
 .form__fieldset {
   border: none;
+  .indent-reset;
+  .oswald-regular;
+  outline: 2px solid darkblue;
+  outline-offset: -3px;
 }
-
-.form__line {
-  display: flex;
-  margin-bottom: 13px;
-}
-
-.form__label {
-  text-transform: uppercase;
-}
-
-.form__programm {
-  display: flex;
-  flex-direction: column;
-}
-
+/*Заголовки fieldset*/
 .form__legend {
   .oswald-regular;
   font-size: 24px;
   line-height: 26px;
   color: @basic-black;
-  margin-bottom: 34px;
+  padding-top: 28px;
+  margin-bottom: 47px;
 }
 
-.form__textarea {
-  width: 100%;
-  height: 150px;
+/*Подписи к инпутам*/
+.form__label {
+  text-transform: uppercase;
+  color: @special_dark-grey;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .form__label--switch {
   color: @special_dark-grey-2;
 }
 
+/*Общая информация о коте*/
+.form__cat-info {
+  padding-bottom: 18px;
+}
+
+.form__cat-info .form__line {
+  // display: flex;
+  margin-bottom: 13px;
+}
+/*Выберите подходящую программу*/
+.form__programm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+}
+
+.form__programm .form__line {
+  margin-bottom: 36px;
+}
+/*Контактные данные (владельца кота)*/
+.form__owner-info .form__line {
+  margin-bottom: 23px;
+}
+/*Комментарий*/
+.form__comment .form__legend {
+  margin-bottom: 36px;
+}
+
+.form__textarea {
+  .indent-reset;
+  width: 280px;
+  height: 150px;
+  text-transform: uppercase;
+  color: special_dark-grey;
+  .oswald-regular;
+  font-size: 16px;
+  line-height: 18px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+/*Дополнительно*/
+.form__additional {
+  margin-bottom: 18px;
+}
+.form__additional .form__legend {
+  padding-top: 25px;
+  margin-bottom: 40px;
+}
+
+.form__additional .form__line {
+  margin-bottom: 23px;
+}
+
+/*Кнопка*/
+.form__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 21px;
+}
+
 .form__note {
+  .indent-reset;
   text-align: center;
   color: @basic-black;
 }
