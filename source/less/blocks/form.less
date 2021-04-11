@@ -1,3 +1,23 @@
+.form {
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/*Верхний текст*/
+.form__content {
+  text-align: left;
+  margin-bottom: 52px;
+  width: 226px;
+
+@media (min-width: @tablet-width) {
+  width: 323px;
+  .set-font-size-line-height(20px; 30px);
+  margin-bottom: 66px;
+  }
+}
+
 .form__fieldset {
   border: none;
   .indent-reset;
@@ -8,19 +28,23 @@
 /*Заголовки fieldset*/
 .form__legend {
   .oswald-regular;
-  font-size: 24px;
-  line-height: 26px;
+  .set-font-size-line-height(24px; 26px);
   color: @basic-black;
-  padding-top: 28px;
-  margin-bottom: 47px;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(36px; 36px);
+  }
 }
 
 /*Подписи к инпутам*/
 .form__label {
   text-transform: uppercase;
   color: @special_dark-grey;
-  font-size: 16px;
-  line-height: 18px;
+  .set-font-size-line-height(16px; 18px);
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(20px; 30px);
+  }
 }
 
 .form__label--switch {
@@ -29,12 +53,16 @@
 
 /*Общая информация о коте*/
 .form__cat-info {
-  padding-bottom: 18px;
+  //padding-bottom: 18px;
 }
 
 .form__cat-info .form__line {
-  // display: flex;
-  margin-bottom: 13px;
+  display: flex;
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
 }
 /*Выберите подходящую программу*/
 .form__programm {
@@ -44,11 +72,23 @@
 }
 
 .form__programm .form__line {
-  margin-bottom: 36px;
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
 }
 /*Контактные данные (владельца кота)*/
+.form__owner-info .form__legend {
+  padding-top: 27px;
+  margin-bottom: 48px;
+}
 .form__owner-info .form__line {
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
 }
 /*Комментарий*/
 .form__comment .form__legend {
@@ -57,7 +97,7 @@
 
 .form__textarea {
   .indent-reset;
-  width: 280px;
+  width: 100%;
   height: 150px;
   text-transform: uppercase;
   color: special_dark-grey;
@@ -70,14 +110,37 @@
 /*Дополнительно*/
 .form__additional {
   margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
 }
 .form__additional .form__legend {
   padding-top: 25px;
   margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 63px;
+  }
 }
 
 .form__additional .form__line {
   margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+    width: 221px;
+  }
+}
+
+.form__fragment {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 /*Кнопка*/
@@ -88,10 +151,23 @@
   padding-top: 9px;
   padding-bottom: 9px;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 282px;
+    margin-right: 60px;
+  }
 }
 
 .form__note {
   .indent-reset;
   text-align: center;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    margin-top: 14px;
+  }
 }

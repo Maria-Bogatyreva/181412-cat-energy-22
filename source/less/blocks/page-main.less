@@ -1,11 +1,23 @@
+.page-main {
+  outline: 3px solid gray;
+  outline-offset: -3px;
+}
 .page-main__title {
   .oswald-regular;
   font-size: 36px;
   line-height: 36px;
   color: @basic-black;
   .indent-reset;
-  margin-top: 27px;
+  padding-top: 27px;
   margin-bottom: 37px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    font-size: 60px;
+    line-height: 60px;
+    margin-left: 40px;
+    margin-bottom: 54px;
+  }
 }
 
 .page-main__content {
@@ -13,6 +25,4 @@
   .indent-reset;
   color: @basic-black;
   text-transform: uppercase;
-  text-align: left;
-  margin-bottom: 52px;
 }
