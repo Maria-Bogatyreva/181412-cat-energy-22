@@ -13,7 +13,6 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
   }
 
   @media (min-width: @desktop-width) {
@@ -42,6 +41,9 @@
   .oswald-regular;
   //outline: 2px solid darkblue;
   //outline-offset: -3px;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
 /*Заголовки fieldset*/
 .form__legend {
@@ -73,6 +75,9 @@
 
 .form__line {
   display: flex;
+}
+.form__input {
+  flex-grow: 1;
 }
 
 /*Общая информация о коте*/
@@ -190,8 +195,11 @@
   padding-top: 9px;
   padding-bottom: 9px;
   margin-bottom: 21px;
+  //outline: 2px solid darkblue;
+  //outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
+    .indent-reset;
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -209,10 +217,12 @@
   .indent-reset;
   text-align: center;
   color: @basic-black;
+  //outline: 2px solid darkblue;
+  //outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
+    .indent-reset;
     font-size: 16px;
-    margin-top: 14px;
     width: 50%;
   }
 
