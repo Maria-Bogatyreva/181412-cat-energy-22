@@ -3,6 +3,24 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.form__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-column-gap: 80px;
+  }
 }
 
 /*Верхний текст*/
@@ -11,10 +29,10 @@
   margin-bottom: 52px;
   width: 226px;
 
-@media (min-width: @tablet-width) {
-  width: 323px;
-  .set-font-size-line-height(20px; 30px);
-  margin-bottom: 66px;
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    .set-font-size-line-height(20px; 30px);
+    margin-bottom: 66px;
   }
 }
 
@@ -38,6 +56,8 @@
 
 /*Подписи к инпутам*/
 .form__label {
+  display: block;
+  white-space: nowrap;
   text-transform: uppercase;
   color: @special_dark-grey;
   .set-font-size-line-height(16px; 18px);
@@ -51,19 +71,23 @@
   color: @special_dark-grey-2;
 }
 
+.form__line {
+  display: flex;
+}
+
 /*Общая информация о коте*/
 .form__cat-info {
   //padding-bottom: 18px;
 }
 
 .form__cat-info .form__line {
-  display: flex;
   margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 52px;
   }
 }
+
 /*Выберите подходящую программу*/
 .form__programm {
   display: flex;
@@ -79,10 +103,20 @@
   }
 }
 /*Контактные данные (владельца кота)*/
+.form__owner-info {
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .form__owner-info .form__legend {
   padding-top: 27px;
   margin-bottom: 48px;
 }
+
 .form__owner-info .form__line {
   margin-bottom: 23px;
 
@@ -91,6 +125,13 @@
   }
 }
 /*Комментарий*/
+.form__comment {
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
 .form__comment .form__legend {
   margin-bottom: 36px;
 }
@@ -117,7 +158,12 @@
     flex-wrap: wrap;
   }
 
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
+
 .form__additional .form__legend {
   padding-top: 25px;
   margin-bottom: 40px;
@@ -136,13 +182,6 @@
   }
 }
 
-.form__fragment {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: flex-start;
-  }
-}
-
 /*Кнопка*/
 .form__button {
   width: 100%;
@@ -156,8 +195,13 @@
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 282px;
-    margin-right: 60px;
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
   }
 }
 
@@ -169,5 +213,12 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     margin-top: 14px;
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
