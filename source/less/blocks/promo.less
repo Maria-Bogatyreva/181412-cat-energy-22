@@ -21,17 +21,19 @@
 }
 
 @media (min-width: @desktop-width) {
-  .promo::after {
+  .promo::before {
     content: "";
-    width: 720px;
-    height: 694px;
     position: absolute;
-    top: -119px;
-    right: 230px;
-    background-image:
-      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
-      url("../img/background-desktop.jpg");
     z-index: -1;
+    top: -66px;
+    right: 0;
+    width: 50%;
+    height: 694px;
+    background-color: #65a93c;
+    background-image: url("../img/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 694px;
+    background-position-x: right;
   }
 }
 

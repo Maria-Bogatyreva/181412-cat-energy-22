@@ -1,39 +1,235 @@
+.form {
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
+.form__form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    grid-column-gap: 80px;
+  }
+}
+
+/*Верхний текст*/
+.form__content {
+  text-align: left;
+  margin-bottom: 52px;
+  width: 226px;
+
+  @media (min-width: @tablet-width) {
+    width: 323px;
+    .set-font-size-line-height(20px; 30px);
+    margin-bottom: 66px;
+  }
+}
+
 .form__fieldset {
   border: none;
+  .indent-reset;
+  .oswald-regular;
+  //outline: 2px solid darkblue;
+  //outline-offset: -3px;
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
 }
-
-.form__line {
-  display: flex;
-  margin-bottom: 13px;
-}
-
-.form__label {
-  text-transform: uppercase;
-}
-
-.form__programm {
-  display: flex;
-  flex-direction: column;
-}
-
+/*Заголовки fieldset*/
 .form__legend {
   .oswald-regular;
-  font-size: 24px;
-  line-height: 26px;
+  .set-font-size-line-height(24px; 26px);
   color: @basic-black;
-  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(36px; 36px);
+  }
 }
 
-.form__textarea {
-  width: 100%;
-  height: 150px;
+/*Подписи к инпутам*/
+.form__label {
+  display: block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: @special_dark-grey;
+  .set-font-size-line-height(16px; 18px);
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(20px; 30px);
+  }
 }
 
 .form__label--switch {
   color: @special_dark-grey-2;
 }
 
+.form__line {
+  display: flex;
+}
+
+.form__input {
+  flex-grow: 1;
+}
+
+/*Общая информация о коте*/
+.form__cat-info {
+  //padding-bottom: 18px;
+}
+
+.form__cat-info .form__line {
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 52px;
+  }
+}
+
+/*Выберите подходящую программу*/
+.form__programm {
+  display: flex;
+  flex-direction: column;
+  padding-top: 27px;
+}
+
+.form__programm .form__line {
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 22px;
+  }
+}
+/*Контактные данные (владельца кота)*/
+.form__owner-info {
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__owner-info .form__legend {
+  padding-top: 27px;
+  margin-bottom: 48px;
+}
+
+.form__owner-info .form__line {
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+  }
+}
+/*Комментарий*/
+.form__comment {
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.form__comment .form__legend {
+  margin-bottom: 36px;
+}
+
+.form__textarea {
+  .indent-reset;
+  width: 100%;
+  height: 150px;
+  text-transform: uppercase;
+  color: special_dark-grey;
+  .oswald-regular;
+  font-size: 16px;
+  line-height: 18px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+/*Дополнительно*/
+.form__additional {
+  margin-bottom: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.form__additional .form__legend {
+  padding-top: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 63px;
+  }
+}
+
+.form__additional .form__line {
+  margin-bottom: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 42px;
+    width: 221px;
+  }
+}
+
+/*Кнопка*/
+.form__button {
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  margin-bottom: 21px;
+  //outline: 2px solid darkblue;
+  //outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    .indent-reset;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}
+
 .form__note {
+  .indent-reset;
   text-align: center;
   color: @basic-black;
+  //outline: 2px solid darkblue;
+  //outline-offset: -3px;
+
+  @media (min-width: @tablet-width) {
+    .indent-reset;
+    font-size: 16px;
+    width: 50%;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }

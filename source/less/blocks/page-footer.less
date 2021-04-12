@@ -2,9 +2,24 @@
   position: relative;
 }
 
-// .page-footer--form {
-//   background-color: @basic-grey;
-// }
+.page-footer__top {
+  padding-top: 26px;
+  padding-bottom: 27px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .indent-reset;
+    margin-top: 82px;
+  }
+}
+
+.page-footer__top--no-index {
+  margin-top: 77px;
+  background-color: @basic-grey;
+}
 
 .page-footer__logo-caption img {
   display: block;
