@@ -1,3 +1,9 @@
+.product {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+}
+
 .product__link-title {
   text-transform: uppercase;
   text-decoration: none;
@@ -9,9 +15,6 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 11px;
-  }
-
-  .product__title:not(:last-child) {
     width: 76px;
   }
 }
@@ -45,6 +48,9 @@
   line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  margin-top: 20px;
 }
 
 .product--view-more {
@@ -52,13 +58,21 @@
 
   .product__link-title {
     color: #111111;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .product__title {
+    width: 100%;
+    margin-top: 59px;
   }
 
   .product__text {
     font-size: 12px;
     line-height: 16px;
     .indent-reset;
-    margin-bottom: 21px;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 
   .product__button--view-more {
