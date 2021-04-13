@@ -9,10 +9,15 @@
 .additional-catalog__title {
   .indent-reset;
   .oswald-regular;
-  font-size: 24px;
-  line-height: 24px;
+  .set-font-size-line-height(24px; 24px);
   color: @basic-black;
   margin-bottom: 36px;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(36px; 36px);
+    margin-bottom: 80px;
+    margin-left: 38px;
+  }
 }
 
 .additional-catalog__list {

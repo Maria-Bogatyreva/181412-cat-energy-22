@@ -1,35 +1,54 @@
+.add-product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+}
+/*Заголовок карточки*/
 .add-product__link-title {
   text-transform: uppercase;
   text-decoration: none;
   color: @special_dark-grey-2;
+}
 
-  .add-product__title {
-    .indent-reset;
-    .oswald-regular;
-    font-size: 16px;
-    line-height: 16px;
-    margin-bottom: 15px;
+.add-product__title {
+  .indent-reset;
+  .oswald-regular;
+  .set-font-size-line-height (16px; 16px);
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height (20px; 20px);
   }
 }
+
 
 .add-product__description {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 13px;
-  line-height: 14px;
+  .set-font-size-line-height(14px; 20px);
 
-  p {/*Наверное, так нельзя...*/
-    .indent-reset;
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(16px; 20px);
+    width: 218px;
   }
 }
-
+.add-product__amount,
 .add-product__price {
-  text-align: right;
+  .indent-reset;
 }
 
+/*Кнопка заказать*/
 .add-product__button {
-  font-size: 16px;
-  line-height: 20px;
+  width: 100%;
+  .set-font-size-line-height(16px; 20px);
   padding-top: 10px;
   padding-bottom: 10px;
 }
