@@ -15,7 +15,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
 }
 
 .main-catalog__item {
@@ -24,15 +23,20 @@
   padding-top: 23px;
   padding-bottom: 18px;
   border-top: 1px solid @special-grey;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    box-sizing: border-box;
     width: 324px;
     height: 430px;
     .indent-reset;
     margin-top: 81px;
     margin-bottom: 60px;
     background-color: @basic-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 431px;
   }
 }
 

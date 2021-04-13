@@ -2,8 +2,8 @@
   padding-top: 25px;
   padding-bottom: 18px;
   /*Временно*/
-  outline: 3px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
+  //outline: 3px solid rgba(255, 0, 0, 0.8);
+  //outline-offset: -3px;
 }
 
 .additional-catalog__title {
@@ -18,11 +18,19 @@
     margin-bottom: 80px;
     margin-left: 38px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
+  }
 }
 
 .additional-catalog__list {
   list-style: none;
   .indent-reset;
+
+  @media (min-width: @desktop-width) {
+    width: 896px;
+  }
 }
 
 .additional-catalog__item {

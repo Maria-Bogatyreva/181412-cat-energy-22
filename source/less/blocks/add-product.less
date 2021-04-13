@@ -9,6 +9,12 @@
     padding-right: 38px;
     padding-left: 38px;
   }
+
+  @media (min-width: @desktop-width) {
+    .indent-reset;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
 }
 /*Заголовок карточки*/
 .add-product__link-title {
@@ -25,9 +31,10 @@
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height (20px; 20px);
+    width: 245px;
+    margin-right: 80px;
   }
 }
-
 
 .add-product__description {
   display: flex;
@@ -39,7 +46,12 @@
     .set-font-size-line-height(16px; 20px);
     width: 218px;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 288px;
+  }
 }
+
 .add-product__amount,
 .add-product__price {
   .indent-reset;
@@ -51,4 +63,8 @@
   .set-font-size-line-height(16px; 20px);
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
 }
