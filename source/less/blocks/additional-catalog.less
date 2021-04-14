@@ -1,12 +1,19 @@
 .additional-catalog {
   padding-top: 25px;
-  padding-bottom: 18px;
+  //padding-bottom: 18px;
   /*Временно*/
   //outline: 3px solid rgba(255, 0, 0, 0.8);
   //outline-offset: -3px;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .additional-catalog__title {
+  width: 100%;
   .indent-reset;
   .oswald-regular;
   .set-font-size-line-height(24px; 24px);
@@ -37,4 +44,50 @@
   padding-top: 15px;
   padding-bottom: 18px;
   border-top: 1px solid @special-grey;
+}
+
+/*Акция*/
+.additional-catalog__action {
+  background-image: url("../img/background-image-catalog.jpg");
+  background-repeat: no-repeat;
+  height: 289px;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 70px;
+    width: 100%;
+    height: 200px;
+    background-size: 708px auto;
+    background-position: 50% 60%;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 289px;
+    margin-top: 0;
+  }
+}
+
+.additional-catalog__action-text {
+  .indent-reset;
+  text-align: center;
+  .set-font-size-line-height(16px; 20px);
+  color: @basic-white;
+  margin-right: 60px;
+  margin-left: 60px;
+  padding-top: 186px;
+
+  @media (min-width: @tablet-width) {
+    .indent-reset;
+    width: 160px;
+    text-align: left;
+    margin-left: 423px;
+    padding-top: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .indent-reset;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 185px;
+  }
 }
