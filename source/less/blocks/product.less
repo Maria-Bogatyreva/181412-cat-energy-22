@@ -5,9 +5,8 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
     padding-right: 39px;
     padding-left: 39px;
     padding-bottom: 40px;
@@ -17,13 +16,11 @@
 /*Картинка карточки*/
 .product__link-img {
   width: 50%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: -20px;
+    flex-grow: 1;
+    margin-top: -20px;
   }
 }
 
