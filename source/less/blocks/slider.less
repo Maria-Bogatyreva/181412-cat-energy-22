@@ -1,3 +1,34 @@
+.slider {
+  position: relative;
+}
+
+
+
+/*Кнопки*/
+.slider__toggle {
+  position: relative;
+  width: 84px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: @basic-white;
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  padding: 3px 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.slider__toggle span {
+  position: absolute;
+  left: 5px;
+  box-sizing: border-box;
+  display: block;
+  background-color: @basic-green;
+  border-radius: 3px;
+  width: 35px;
+  height: 6px;
+}
+
 .slider__button {
   border: none;
   background-color: @basic-grey-2;
@@ -6,3 +37,12 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.slider__buttons {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

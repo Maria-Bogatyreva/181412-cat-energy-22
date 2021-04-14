@@ -1,5 +1,5 @@
 .technology {
-  margin-bottom: 27px;
+  padding-bottom: 20px;
 }
 
 .technology__title {
@@ -8,7 +8,7 @@
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     font-size: 60px;
@@ -19,10 +19,11 @@
 .technology__list {
   list-style: none;
   .indent-reset;
-  margin-bottom: 42px;
   display: grid;
+  padding-left: 80px;
 
   @media (min-width: @tablet-width) {
+    .indent-reset;
     font-size: 16px;
     line-height: 24px;
     grid-template-columns: 1fr 1fr;
@@ -35,6 +36,11 @@
     grid-template-rows: 1fr;
     grid-gap: 80px;
   }
+}
+
+.technology__content {
+  .indent-reset;
+  margin-bottom: 26px;
 }
 
 @media (min-width: @tablet-width) {
