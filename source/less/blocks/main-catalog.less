@@ -1,16 +1,47 @@
 .main-catalog {
   /*Временно*/
-  outline: 3px solid orange;
-  outline-offset: -3px;
+  // outline: 3px solid orange;
+  // outline-offset: -3px;
 }
 
 .main-catalog__list {
   .indent-reset;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .main-catalog__item {
-  padding-top: 15px;
+  outline: 3px solid blue;
+  outline-offset: -3px;
+  padding-top: 23px;
   padding-bottom: 18px;
   border-top: 1px solid @special-grey;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    height: 430px;
+    .indent-reset;
+    margin-top: 81px;
+    margin-bottom: 60px;
+    background-color: @basic-grey;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    height: 431px;
+  }
+}
+
+.main-catalog__item:last-child {
+  @media (min-width: @tablet-width) {
+    background-color: @basic-white;
+  }
 }
