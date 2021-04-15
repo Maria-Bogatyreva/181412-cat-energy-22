@@ -7,8 +7,19 @@
     background-color: @basic-white;
     padding-top: 43px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 0;
+  }
 }
 
+.demonstration__content {
+  @media (min-width: @desktop-width) {
+    padding-right: 175px;
+  }
+}
+/*Заголовок*/
 .demonstration__title {
   .indent-reset;
   .oswald-regular;
@@ -22,14 +33,17 @@
     line-height: 60px;
     margin-bottom: 66px;
   }
-}
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 145px;
+  }
+}
+/*Абзац текста*/
 .demonstration__description {
   .indent-reset;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
+    .set-font-size-line-height(16px; 24px);
   }
 }
 
@@ -47,7 +61,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 436px;
+    width: 366px;
+    margin-top: 83px;
+    justify-content: space-between;
   }
 }
 
@@ -66,11 +82,10 @@
 .demonstration__explanation {
   color: @basic-black;
   .oswald-regular;
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
+  .set-font-size-line-height(24px; 24px);
   margin-bottom: 15px;
   .indent-reset;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height(30px; 37px);
@@ -86,6 +101,12 @@
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height(14px; 14px);
+  }
+}
+
+.demonstration__parameter br {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -109,24 +130,34 @@
     width: auto;
     .indent-reset;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 59px;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
 /*Затраты на питание - Цифры*/
 .demonstration__item--cost .demonstration__explanation {
-    margin-left: 0px;
+  margin-left: 0;
 
-    @media (min-width: @tablet-width) {
-      .set-font-size-line-height(20px; 20px);
-    }
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(20px; 20px);
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 64px;
+  }
 }
 
 /*Затраты на питание - Пояснения*/
 .demonstration__item--cost .demonstration__parameter {
-    margin-left: 0px;
+  margin-left: 0;
 
-    @media (min-width: @tablet-width) {
-      .set-font-size-line-height(20px; 20px);
-      .indent-reset;
-    }
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(20px; 20px);
+    .indent-reset;
+  }
 }
 
 /*Раскладка для десктопа*/

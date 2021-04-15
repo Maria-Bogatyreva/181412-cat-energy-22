@@ -1,11 +1,29 @@
 .page-header {
-  outline: 3px solid salmon;
-  outline-offset: -3px;
+  //outline: 3px solid salmon;
+  //outline-offset: -3px;
 
-  @media (min-width: @tablet-width) {
-
-    }
+  @media (min-width: @desktop-width) {
+    padding-top: 65px;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .page-header__background::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 704px;
+    background-color: #65a93c;
+    background-image: url("../img/background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 694px;
+    background-position-x: right;
+  }
+}
+
 /*Для стилизации header в планшете и десктопе*/
 .page-header__wrapper {
   display: flex;
@@ -16,8 +34,11 @@
     flex-direction: row;
     width: 708px;
     margin: 0 auto;
-    //outline: 3px solid darkblue;
-    //outline-offset: -3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 /*Стили МОБИЛЬНОГО меню*/
@@ -107,6 +128,11 @@
     padding-bottom: 8px;
     .oswald-regular;
   }
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+    .set-font-size-line-height(20px; 30px);
+  }
 }
 
 .page-header__main-nav-item:last-child a {
@@ -117,9 +143,12 @@
   @media (min-width: @tablet-width) {
     border-bottom: @green-border;
   }
-}
 
- /*Меню открыто: крест + навигация ЕСТЬ*/
+  @media (min-width: @desktop-width) {
+    border-bottom: @white-border;
+  }
+}
+/*Меню открыто: крест + навигация ЕСТЬ*/
 .page-header__menu-opened {
   .page-header__toggle--cross {
     display: block;
@@ -148,10 +177,3 @@
     display: none;
   }
 }
-
-
-
-
-
-
-
