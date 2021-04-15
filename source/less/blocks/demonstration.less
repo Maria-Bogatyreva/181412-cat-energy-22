@@ -5,6 +5,7 @@
 
   @media (min-width: @tablet-width) {
     background-color: @basic-white;
+    padding-top: 43px;
   }
 }
 
@@ -31,6 +32,7 @@
     line-height: 24px;
   }
 }
+
 /*Статистика*/
 .demonstration__list {
   display: flex;
@@ -41,6 +43,7 @@
 
   @media (min-width: @tablet-width) {
     margin-top: 68px;
+    justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
@@ -54,37 +57,35 @@
   flex-direction: column-reverse;
   align-items: center;
 
-  .demonstration__explanation {
-    color: @basic-black;
-    .oswald-regular;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    .indent-reset;
-  }
-
-  .demonstration__parameter {
-    text-align: center;
-    font-size: 12px;
-    line-height: 12px;
-    margin-top: 9px;
+  @media (min-width: @tablet-width) {
+    width: 162px;
   }
 }
 
+/*Цифры*/
+.demonstration__explanation {
+  color: @basic-black;
+  .oswald-regular;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  .indent-reset;
 
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(30px; 37px);
+  }
+}
 
-@media (min-width: @tablet-width) {
-  .demonstration__item {
-    .demonstration__explanation {
-      font-size: 30px;
-      line-height: 37px;
-    }
+/*Пояснения*/
+.demonstration__parameter {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 9px;
 
-    .demonstration__parameter {
-      font-size: 14px;
-      line-height: 14px;
-    }
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(14px; 14px);
   }
 }
 
@@ -100,23 +101,41 @@
   line-height: 20px;
   color: @basic-black;
 
-  .demonstration__explanation {
-    margin-left: 0px;
-  }
-
   @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: auto;
     .indent-reset;
-    font-size: 20px;
-    line-height: 20px;
   }
 }
+/*Затраты на питание - Цифры*/
+.demonstration__item--cost .demonstration__explanation {
+    margin-left: 0px;
 
-.demonstration__slider {
-  @media (min-width: @tablet-width) {
-    background-color: @basic-grey-2;
-  }
+    @media (min-width: @tablet-width) {
+      .set-font-size-line-height(20px; 20px);
+    }
 }
 
+/*Затраты на питание - Пояснения*/
+.demonstration__item--cost .demonstration__parameter {
+    margin-left: 0px;
+
+    @media (min-width: @tablet-width) {
+      .set-font-size-line-height(20px; 20px);
+      .indent-reset;
+    }
+}
+
+// .demonstration__slider {
+//   @media (min-width: @tablet-width) {
+//     background-color: @basic-grey-2;
+//   }
+// }
+
+/*Раскладка для десктопа*/
 @media (min-width: @desktop-width) {
   .demonstration__wrapper {
     display: flex;

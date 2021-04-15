@@ -1,5 +1,9 @@
 .technology {
   padding-bottom: 20px;
+  @media (min-width: @tablet-width) {
+    border-bottom: @grey-border;
+    padding-bottom: 51px;
+  }
 }
 
 .technology__title {
@@ -11,6 +15,7 @@
   margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -28,7 +33,8 @@
     line-height: 24px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 60px;
+    grid-column-gap: 60px;
+    grid-row-gap: 76px;
   }
 
   @media (min-width: @desktop-width) {
@@ -37,12 +43,23 @@
     grid-gap: 80px;
   }
 }
-
-.technology__content {
-  .indent-reset;
+/*Карточка*/
+.technology__item {
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    .indent-reset;
+    width: 250px;
+    padding-top: 119px;
+    padding-bottom: 50px;
+  }
 }
 
+/*Контент карточки*/
+.technology__content {
+  .indent-reset;
+}
+/*Раскладка карточек на планшете*/
 @media (min-width: @tablet-width) {
   .technology__item--structure {
     grid-column-start: 1;
@@ -63,6 +80,7 @@
   }
 }
 
+/*Раскладка карточек на десктопе*/
 @media (min-width: @desktop-width) {
   .technology__item--structure {
     grid-column-start: 1;
