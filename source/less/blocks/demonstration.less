@@ -1,12 +1,25 @@
 .demonstration {
+  padding-top: 27px;
   background-color: @basic-grey-2;
   padding-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     background-color: @basic-white;
+    padding-top: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 26px;
+    padding-bottom: 0;
   }
 }
 
+.demonstration__content {
+  @media (min-width: @desktop-width) {
+    padding-right: 175px;
+  }
+}
+/*Заголовок*/
 .demonstration__title {
   .indent-reset;
   .oswald-regular;
@@ -20,94 +33,153 @@
     line-height: 60px;
     margin-bottom: 66px;
   }
-}
 
+  @media (min-width: @desktop-width) {
+    margin-bottom: 145px;
+  }
+}
+/*Абзац текста*/
 .demonstration__description {
   .indent-reset;
 
   @media (min-width: @tablet-width) {
-    font-size: 16px;
-    line-height: 24px;
+    .set-font-size-line-height(16px; 24px);
   }
 }
 
+/*Статистика*/
 .demonstration__list {
   display: flex;
   flex-wrap: wrap;
   .indent-reset;
-  margin-top: 40px;
+  margin-top: 25px;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
-    margin-top: 68px;
+    margin-top: 53px;
+    justify-content: space-between;
   }
 
   @media (min-width: @desktop-width) {
-    width: 436px;
+    width: 366px;
+    margin-top: 69px;
+    justify-content: space-between;
   }
 }
 
 .demonstration__item {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  text-align: center;
+  width: 124px;
 
-  .demonstration__explanation {
-    color: @basic-black;
-    .oswald-regular;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-    .indent-reset;
+  @media (min-width: @tablet-width) {
+    width: 162px;
+    margin-right: 43px;
   }
 
-  .demonstration__parameter {
-    text-align: center;
-    font-size: 12px;
-    line-height: 12px;
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .demonstration__item {
-    .demonstration__explanation {
-      font-size: 30px;
-      line-height: 37px;
-    }
+/*Цифры*/
+.demonstration__value {
+  color: @basic-black;
+  .oswald-regular;
+  .set-font-size-line-height(24px; 24px);
+  margin-bottom: 15px;
+  .indent-reset;
+  text-transform: uppercase;
+  border: @grey-border-2;
+  padding-top: 12px;
+  padding-bottom: 19px;
+  border-radius: 5px;
 
-    .demonstration__parameter {
-      font-size: 14px;
-      line-height: 14px;
-    }
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(30px; 37px);
   }
 }
 
+/*Пояснения*/
+.demonstration__parameter {
+  font-size: 12px;
+  line-height: 12px;
+  .indent-reset;
+  position: relative;
+  top: -7px;
+  background-color: @basic-grey-2;
+  margin: 0 10px;
+
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(14px; 14px);
+    background-color: @basic-white;
+  }
+}
+
+.demonstration__parameter br {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+/*Затраты на питание*/
 .demonstration__item--cost {
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 24px;
+  margin-top: 12px;
   margin-bottom: 44px;
   text-transform: uppercase;
   .oswald-regular;
-  line-height: 20px;
   color: @basic-black;
 
   @media (min-width: @tablet-width) {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-grow: 1;
+    width: auto;
     .indent-reset;
-    font-size: 20px;
-    line-height: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 38px;
+    flex-direction: row;
+    justify-content: flex-start;
   }
 }
+/*Затраты на питание - Цифры*/
+.demonstration__value--cost {
+  .set-font-size-line-height(14px; 20px);
 
-.demonstration__slider {
   @media (min-width: @tablet-width) {
-    background-color: @basic-grey-2;
+    .set-font-size-line-height(20px; 20px);
+    margin-top: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 64px;
   }
 }
 
+/*Затраты на питание - Пояснения*/
+.demonstration__parameter--cost {
+  .indent-reset;
+  .set-font-size-line-height(14px; 20px);
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(20px; 20px);
+    .indent-reset;
+    margin-top: 11px;
+  }
+}
+
+/*Раскладка для десктопа*/
 @media (min-width: @desktop-width) {
   .demonstration__wrapper {
     display: flex;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .demonstration__slider {

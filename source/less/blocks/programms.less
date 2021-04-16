@@ -1,5 +1,4 @@
 .programms {
-  margin-top: 23px;
   margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
@@ -7,6 +6,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-top: 20px;
     margin-bottom: 71px;
   }
 }
@@ -31,7 +31,8 @@
   background-color: @basic-grey;
   box-sizing: border-box;
   padding-left: 20px;
-  padding-bottom: 11px;
+  padding-right: 20px;
+  padding-bottom: 17px;
 
   @media (min-width: @tablet-width) {
     padding-left: 53px;
@@ -39,7 +40,7 @@
     padding-right: 279px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     padding-right: 0;
   }
 }
@@ -53,10 +54,12 @@
   line-height: 37px;
   margin-top: 30px;
   margin-bottom: 29px;
+  margin-left: 70px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    .indent-reset;
     margin-top: 77px;
     margin-bottom: 25px;
   }
@@ -70,17 +73,18 @@
 .programms__description {
   .indent-reset;
   text-align: left;
-  padding-right: 20px;
-  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: @grey-border;
+  margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 50px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
   }
 }
 

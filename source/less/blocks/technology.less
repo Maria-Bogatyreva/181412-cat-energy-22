@@ -1,5 +1,14 @@
 .technology {
-  margin-bottom: 27px;
+  padding-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    border-bottom: @grey-border;
+    padding-bottom: 51px;
+  }
+
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
 .technology__title {
@@ -8,9 +17,10 @@
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 65px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -19,24 +29,42 @@
 .technology__list {
   list-style: none;
   .indent-reset;
-  margin-bottom: 42px;
   display: grid;
+  padding-left: 80px;
 
   @media (min-width: @tablet-width) {
+    .indent-reset;
     font-size: 16px;
     line-height: 24px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 60px;
+    grid-column-gap: 60px;
+    grid-row-gap: 76px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 80px;
+    grid-gap: 74px;
+  }
+}
+/*Карточка*/
+.technology__item {
+  margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    .indent-reset;
+    width: 250px;
+    padding-top: 119px;
+    padding-bottom: 50px;
   }
 }
 
+/*Контент карточки*/
+.technology__content {
+  .indent-reset;
+}
+/*Раскладка карточек на планшете*/
 @media (min-width: @tablet-width) {
   .technology__item--structure {
     grid-column-start: 1;
@@ -57,6 +85,7 @@
   }
 }
 
+/*Раскладка карточек на десктопе*/
 @media (min-width: @desktop-width) {
   .technology__item--structure {
     grid-column-start: 1;
