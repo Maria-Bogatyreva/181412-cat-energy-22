@@ -20,7 +20,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 570px 570px;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: 80px;
   }
 }
@@ -30,6 +30,10 @@
 
     @media (min-width: @tablet-width) {
       margin-left: 70px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 110px;
     }
   }
 
@@ -43,6 +47,10 @@
     .set-font-size-line-height(20px; 30px);
     margin-bottom: 66px;
     margin-left: 71px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 111px;
   }
 }
 
@@ -72,8 +80,8 @@
   display: block;
   white-space: nowrap;
   text-transform: uppercase;
-  //color: red;
-  color: @special_dark-grey;
+  color: red;
+  //color: @special_dark-grey;
   .set-font-size-line-height(16px; 18px);
   margin-right: 14px;
 
@@ -98,8 +106,8 @@
   .oswald-regular;
   color: @special_dark-grey;
   padding: 10px 15px;
-  border: @grey-border-4;
-  //border: @test-border;
+  //border: @grey-border-4;
+  border: @test-border;
 
   @media (min-width: @tablet-width) {
   .set-font-size-line-height (20px; 30px);
@@ -114,6 +122,10 @@
   @media (min-width: @tablet-width) {
     border: none;
     padding: 0 70px 9px;
+  }
+
+  @media (min-width: @tablet-width) {
+
   }
 }
 
@@ -165,10 +177,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-left: 101px;
     grid-column-start: 1;
     grid-column-end: 3;
     display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -203,6 +215,7 @@
 
   @media (min-width: @tablet-width) {
     margin-bottom: 76px;
+
   }
 }
 
@@ -305,7 +318,7 @@
 }
 
 /*Для позиционирования кнопки и подписи*/
-.form__fragment {
+.form__fragment-bottom {
   display: flex;
   width: 100%;
 

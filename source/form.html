@@ -56,41 +56,44 @@
           <p class="page-main__content form__content">Заполните анкету, и мы подберем <br> программу  питания для вашего кота</p>
 
           <form class="form__form" action="https://echo.htmlacademy.ru" method="POST"  id="form">
-            <fieldset class="form__fieldset form__cat-info">
-              <legend class="visually-hidden">Общая информация о коте</legend>
-              <div class="form__line">
-                <label class="form__label" for="cat-name">Имя:*</label>
-                <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-              </div>
-              <div class="form__line">
-                <label class="form__label" for="cat-weight">Вес (кг):*</label>
-                <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-              </div>
+            <div class="form__fragment-top">
+              <fieldset class="form__fieldset form__cat-info">
 
-              <div class="form__line">
-                <label class="form__label" for="cat-age">Возраст (лет):</label>
-                <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
-              </div>
-            </fieldset>
+                <legend class="visually-hidden">Общая информация о коте</legend>
+                <div class="form__line">
+                  <label class="form__label" for="cat-name">Имя:*</label>
+                  <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+                </div>
+                <div class="form__line">
+                  <label class="form__label" for="cat-weight">Вес (кг):*</label>
+                  <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
+                </div>
 
-            <fieldset class="form__fieldset form__programm">
-              <legend class="visually-hidden">Выберите подходящую программу</legend>
+                <div class="form__line">
+                  <label class="form__label" for="cat-age">Возраст (лет):</label>
+                  <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
+                </div>
+              </fieldset>
 
-              <div class="form__line">
-                <input class="form__input-radio" type="radio" id="weight-down" name="program"  value="weight-down" checked>
-                <label class="form__label form__label--switch" for="weight-down">Похудение</label>
-              </div>
+              <fieldset class="form__fieldset form__programm">
+                <legend class="visually-hidden">Выберите подходящую программу</legend>
 
-              <div class="form__line">
-                <input class="form__input-radio" type="radio" id="weight-up" name="program"  value="weight-up">
-                <label class="form__label form__label--switch" for="weight-down">Набор массы</label>
-              </div>
+                <div class="form__line">
+                  <input class="form__input-radio" type="radio" id="weight-down" name="program"  value="weight-down" checked>
+                  <label class="form__label form__label--switch" for="weight-down">Похудение</label>
+                </div>
 
-              <div class="form__line">
-                <input class="form__input-radio" type="radio" id="unknown" name="program"  value="unknown">
-                <label  class="form__label form__label--switch" for="weight-down">Не знаю (Нужен ваш совет)</label>
-              </div>
-            </fieldset>
+                <div class="form__line">
+                  <input class="form__input-radio" type="radio" id="weight-up" name="program"  value="weight-up">
+                  <label class="form__label form__label--switch" for="weight-down">Набор массы</label>
+                </div>
+
+                <div class="form__line">
+                  <input class="form__input-radio" type="radio" id="unknown" name="program"  value="unknown">
+                  <label  class="form__label form__label--switch" for="weight-down">Не знаю (Нужен ваш совет)</label>
+                </div>
+              </fieldset>
+            </div>
 
             <fieldset class="form__fieldset form__owner-info">
               <legend class="form__legend">Контактные данные (владельца кота)</legend>
@@ -137,7 +140,7 @@
               </div>
             </fieldset>
 
-            <div class="form__fragment">
+            <div class="form__fragment-bottom">
               <button class="button form__button" type="submit">Отправить заявку</button>
               <p class="form__note">* — Обязательные поля</p>
             </div>
