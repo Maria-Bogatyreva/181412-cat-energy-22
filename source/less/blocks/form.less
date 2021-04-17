@@ -116,7 +116,7 @@
 
 /*Общая информация о коте*/
 .form__cat-info {
-  padding: 0 20px 9px;
+  padding-bottom: 9px;
   border-bottom: @grey-border-3;
 
   @media (min-width: @tablet-width) {
@@ -141,7 +141,7 @@
 .form__programm {
   display: flex;
   flex-direction: column;
-  padding: 29px 20px 0;
+  padding-top: 29px;
   border-bottom: @grey-border-3;
 
   @media (min-width: @tablet-width) {
@@ -170,7 +170,7 @@
 /*Контактные данные (владельца кота)*/
 .form__owner-info {
   position: relative;
-  padding: 0 20px 14px;
+  padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     padding: 0 67px 43px;
@@ -236,8 +236,6 @@
 }
 /*Комментарий*/
 .form__comment {
-  padding: 0 20px;
-
   @media (min-width: @tablet-width) {
     padding: 0 70px;
   }
@@ -277,7 +275,6 @@
 }
 /*Дополнительно*/
 .form__additional {
-  padding: 0 20px;
   margin-bottom: 18px;
 
   @media (min-width: @tablet-width) {
@@ -320,6 +317,7 @@
 /*Для позиционирования кнопки и подписи*/
 .form__fragment-bottom {
   display: flex;
+  flex-direction: column;
   width: 100%;
 
   @media (min-width: @tablet-width) {
