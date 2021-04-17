@@ -59,7 +59,7 @@
             <div class="form__fragment-top">
 <!-- ОБЩАЯ ИНФОРМАЦИЯ О КОТЕ-->
               <fieldset class="form__fieldset form__cat-info">
-                <div class="wrapper wrapper--form">
+                <div class="wrapper form__wrapper">
                   <legend class="visually-hidden">Общая информация о коте</legend>
                   <div class="form__line">
                     <label class="form__label" for="cat-name">Имя:*</label>
@@ -101,23 +101,26 @@
             </div>
 <!-- КОНТАКТНЫЕ ДАННЫЕ ВЛАДЕЛЬЦА КОТА-->
             <fieldset class="form__fieldset form__owner-info">
-              <div class="wrapper wrapper--form">
+              <div class="wrapper form__wrapper">
                 <legend class="form__legend">Контактные данные (владельца кота)</legend>
 
-                <div class="form__line">
-                  <label class="form__label" for="owner-email">E-mail:*</label>
-                  <input class="form__input form__input--email" type="text" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
-                </div>
+                <ul class="form__list form__list--owner-info">
 
-                <div class="form__line">
-                  <label class="form__label" for="owner-tel">Телефон:*</label>
-                  <input class="form__input form__input--tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
-                </div>
+                  <div class="form__line">
+                    <label class="form__label" for="owner-email">E-mail:*</label>
+                    <input class="form__input form__input--email" type="text" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+                  </div>
+
+                  <div class="form__line">
+                    <label class="form__label" for="owner-tel">Телефон:*</label>
+                    <input class="form__input form__input--tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
+                  </div>
+                </ul>
               </div>
             </fieldset>
 <!-- КОММЕНТАРИЙ-->
             <fieldset class="form__fieldset form__comment">
-              <div class="wrapper wrapper--form">
+              <div class="wrapper form__wrapper">
                 <legend class="form__legend">Комментарий</legend>
 
                 <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
@@ -126,7 +129,7 @@
             </fieldset>
 <!-- ДОПОЛНИТЕЛЬНО-->
             <fieldset class="form__fieldset form__additional">
-              <div class="wrapper wrapper--form">
+              <div class="wrapper form__wrapper">
                 <legend class="form__legend">Дополнительно</legend>
 
                 <ul class="form__list form__list--additional">
@@ -164,7 +167,7 @@
     <footer class="page-footer">
       <div class="page-footer__top page-footer__top--no-index contacts ">
         <div class="wrapper contacts__content">
-          <p class="contacts__partnership">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__partnership">Приглашаем к&nbsp;сотрудничеству <br> дилеров!</p>
           <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></address></address>
         </div>
       </div>
