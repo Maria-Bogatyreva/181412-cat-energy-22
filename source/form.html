@@ -57,13 +57,15 @@
 
           <form class="form__form" action="https://echo.htmlacademy.ru" method="POST"  id="form">
             <div class="form__fragment-top">
+<!-- ОБЩАЯ ИНФОРМАЦИЯ О КОТЕ-->
               <fieldset class="form__fieldset form__cat-info">
-                <div class="wrapper">
+                <div class="wrapper wrapper--form">
                   <legend class="visually-hidden">Общая информация о коте</legend>
                   <div class="form__line">
                     <label class="form__label" for="cat-name">Имя:*</label>
                     <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
                   </div>
+
                   <div class="form__line">
                     <label class="form__label" for="cat-weight">Вес (кг):*</label>
                     <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
@@ -75,31 +77,31 @@
                   </div>
                 </div>
               </fieldset>
-
+<!-- ПРОГРАММЫ-->
               <fieldset class="form__fieldset form__programm">
-                <div class="wrapper">
                   <legend class="visually-hidden">Выберите подходящую программу</legend>
 
-                  <div class="form__line">
-                    <input class="form__input-radio" type="radio" id="weight-down" name="program"  value="weight-down" checked>
-                    <label class="form__label form__label--switch" for="weight-down">Похудение</label>
-                  </div>
+                  <ul class="form__list form__list--programm">
+                    <li class="form__line">
+                      <input class="form__input-radio" type="radio" id="weight-down" name="program"  value="weight-down" checked>
+                      <label class="form__label form__label--switch" for="weight-down">Похудение</label>
+                    </li>
 
-                  <div class="form__line">
-                    <input class="form__input-radio" type="radio" id="weight-up" name="program"  value="weight-up">
-                    <label class="form__label form__label--switch" for="weight-down">Набор массы</label>
-                  </div>
+                    <li class="form__line">
+                      <input class="form__input-radio" type="radio" id="weight-up" name="program"  value="weight-up">
+                      <label class="form__label form__label--switch" for="weight-down">Набор массы</label>
+                    </li>
 
-                  <div class="form__line">
-                    <input class="form__input-radio" type="radio" id="unknown" name="program"  value="unknown">
-                    <label  class="form__label form__label--switch" for="weight-down">Не знаю (Нужен ваш совет)</label>
-                  </div>
-                </div>
+                    <li class="form__line">
+                      <input class="form__input-radio" type="radio" id="unknown" name="program"  value="unknown">
+                      <label  class="form__label form__label--switch" for="weight-down">Не знаю (Нужен ваш совет)</label>
+                    </li>
+                  </ul>
               </fieldset>
             </div>
-
+<!-- КОНТАКТНЫЕ ДАННЫЕ ВЛАДЕЛЬЦА КОТА-->
             <fieldset class="form__fieldset form__owner-info">
-              <div class="wrapper">
+              <div class="wrapper wrapper--form">
                 <legend class="form__legend">Контактные данные (владельца кота)</legend>
 
                 <div class="form__line">
@@ -113,39 +115,41 @@
                 </div>
               </div>
             </fieldset>
-
+<!-- КОММЕНТАРИЙ-->
             <fieldset class="form__fieldset form__comment">
-              <div class="wrapper">
+              <div class="wrapper wrapper--form">
                 <legend class="form__legend">Комментарий</legend>
 
                 <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
                 <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
-
+<!-- ДОПОЛНИТЕЛЬНО-->
             <fieldset class="form__fieldset form__additional">
-              <div class="wrapper">
+              <div class="wrapper wrapper--form">
                 <legend class="form__legend">Дополнительно</legend>
 
-                <div class="form__line">
-                  <input class="form__checkbox" type="checkbox" name="additional" id="sweetener" value="sweetener" checked>
-                  <label class="form__label form__label--switch" for="sweetener">Сахарозаменитель</label>
-                </div>
+                <ul class="form__list form__list--additional">
+                  <li class="form__line">
+                    <input class="form__checkbox" type="checkbox" name="additional" id="sweetener" value="sweetener" checked>
+                    <label class="form__label form__label--switch" for="sweetener">Сахарозаменитель</label>
+                  </li>
 
-                <div class="form__line">
-                  <input class="form__checkbox" type="checkbox" name="additional" id="water" value="water">
-                  <label class="form__label form__label--switch" for="water">Питьевая вода</label>
-                </div>
+                  <li class="form__line">
+                    <input class="form__checkbox" type="checkbox" name="additional" id="water" value="water">
+                    <label class="form__label form__label--switch" for="water">Питьевая вода</label>
+                  </li>
 
-                <div class="form__line">
-                  <input class="form__checkbox" type="checkbox" name="additional" id="milk" value="milk">
-                  <label class="form__label form__label--switch" for="milk">Молоко</label>
-                </div>
+                  <li class="form__line">
+                    <input class="form__checkbox" type="checkbox" name="additional" id="milk" value="milk">
+                    <label class="form__label form__label--switch" for="milk">Молоко</label>
+                  </li>
 
-                <div class="form__line">
-                  <input class="form__checkbox" type="checkbox" name="additional" id="vitamin" value="vitamin">
-                  <label class="form__label form__label--switch" for="vitamin">Витамины</label>
-                </div>
+                  <li class="form__line">
+                    <input class="form__checkbox" type="checkbox" name="additional" id="vitamin" value="vitamin">
+                    <label class="form__label form__label--switch" for="vitamin">Витамины</label>
+                  </li>
+                </ul>
               </div>
             </fieldset>
 
