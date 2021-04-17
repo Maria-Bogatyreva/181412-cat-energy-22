@@ -21,12 +21,16 @@
     grid-column-gap: 80px;
   }
 }
+/*Верхний заголовок*/
+  .form__title {
+    margin-left: 20px;
+  }
 
 /*Верхний текст*/
 .form__content {
   text-align: left;
   margin-bottom: 38px;
-  //width: 226px;
+  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     //width: 323px;
@@ -92,7 +96,8 @@
 
 /*Общая информация о коте*/
 .form__cat-info {
-  padding-bottom: 9px;
+  padding: 0 20px 9px;
+  // padding-bottom: 9px;
   border-bottom: @grey-border-3;
 }
 
@@ -108,7 +113,7 @@
 .form__programm {
   display: flex;
   flex-direction: column;
-  padding-top: 29px;
+  padding: 29px 20px 0;
   border-bottom: @grey-border-3;
 }
 
@@ -125,8 +130,7 @@
 }
 /*Контактные данные (владельца кота)*/
 .form__owner-info {
-  padding-bottom: 14px;
-
+  padding: 0 20px 14px;
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
@@ -142,16 +146,6 @@
   position: relative;
 }
 
-.form__owner-info .form__legend::after {
-  content: "";
-  position: absolute;
-  top: 40px;
-  right: -20px;
-  height: 0;
-  width: 99px;
-  border: @green-border-2;
-}
-
 .form__owner-info .form__line {
   margin-bottom: 13px;
 
@@ -165,6 +159,7 @@
 }
 /*Комментарий*/
 .form__comment {
+  padding: 0 20px;
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -174,16 +169,6 @@
 .form__comment .form__legend {
   position: relative;
   margin-bottom: 35px;
-}
-
-.form__comment .form__legend::after {
-  content: "";
-  position: absolute;
-  top: 11px;
-  left: 143px;
-  height: 0;
-  width: 155px;
-  border: @green-border-2;
 }
 
 .form__textarea {
@@ -201,8 +186,8 @@
 }
 /*Дополнительно*/
 .form__additional {
+  padding: 0 20px;
   margin-bottom: 18px;
-
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -226,16 +211,6 @@
   }
 }
 
-.form__additional .form__legend::after {
-  content: "";
-  position: absolute;
-  top: 34px;
-  left: 163px;
-  height: 0;
-  width: 135px;
-  border: @green-border-2;
-}
-
 .form__additional .form__line {
   margin-bottom: 23px;
 
@@ -251,14 +226,11 @@
 
 /*Кнопка*/
 .form__button {
-  width: 100%;
+  width: 280px;
   font-size: 16px;
   line-height: 20px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  margin-bottom: 21px;
-  //outline: 2px solid darkblue;
-  //outline-offset: -3px;
+  padding: 9px 0;
+  margin: 0 auto 21px;
 
   @media (min-width: @tablet-width) {
     .indent-reset;
