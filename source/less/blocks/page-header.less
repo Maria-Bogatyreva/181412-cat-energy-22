@@ -8,7 +8,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__background::before {
+  .page-header__index::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -32,15 +32,15 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    //margin: 0 70px;
-    width: 708px;
-    margin: 0 auto;
+    margin: 0 70px;
+    //width: 708px;
+    //margin: 0 auto;
   }
 
   @media (min-width: @desktop-width) {
-    //margin: 0 110px;
-    width: 1220px;
-    margin: 0 auto;
+    margin: 0 110px;
+    max-width: 1220px;
+    //margin: 0 auto;
   }
 }
 
@@ -105,10 +105,6 @@
     color: @basic-black;
   }
 }
-
-// .page-header__main-nav-item:last-child a {
-//   border-bottom: none;
-// }
 
 .page-header__main-nav-item--active a {
   @media (min-width: @tablet-width) {
