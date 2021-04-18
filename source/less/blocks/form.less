@@ -10,17 +10,17 @@
 }
 
 /*Верхний заголовок*/
-  .form__title {
-    margin-left: 20px;
+.form__title {
+  margin-left: 20px;
 
-    @media (min-width: @tablet-width) {
-      margin-left: 70px;
-    }
-
-    @media (min-width: @desktop-width) {
-      margin-left: 110px;
-    }
+  @media (min-width: @tablet-width) {
+    margin-left: 70px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 110px;
+  }
+}
 
 /*Верхний текст*/
 .form__content {
@@ -55,6 +55,7 @@
     grid-column-gap: 80px;
   }
 }
+
 .form__wrapper {
   @media (min-width: @tablet-width) {
     padding: 0 70px;
@@ -67,6 +68,7 @@
     .indent-reset;
   }
 }
+
 .form__fieldset {
   border: none;
   .indent-reset;
@@ -94,8 +96,8 @@
   display: block;
   white-space: nowrap;
   text-transform: uppercase;
-  color: red;
-  //color: @special_dark-grey;
+  //color: red;
+  color: @special_dark-grey;
   .set-font-size-line-height(16px; 18px);
   margin-right: 14px;
 
@@ -120,11 +122,11 @@
   .oswald-regular;
   color: @special_dark-grey;
   padding: 10px 15px;
-  //border: @grey-border-4;
-  border: @test-border;
+  border: @grey-border-4;
+  //border: @test-border;
 
   @media (min-width: @tablet-width) {
-  .set-font-size-line-height (20px; 30px);
+    .set-font-size-line-height (20px; 30px);
   }
 }
 
@@ -144,7 +146,7 @@
 
   @media (min-width: @tablet-width) {
     border: none;
-    padding-bottom:9px;
+    padding-bottom: 9px;
   }
 }
 
@@ -164,15 +166,15 @@
 
 /*Выберите подходящую программу*/
 .form__programm {
-  margin: 0 20px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   padding-top: 29px;
   border-bottom: @grey-border-3;
 
   @media (min-width: @tablet-width) {
-    border: @test-border;
-    //border: @grey-border-3;
+    //border: @test-border;
+    border: @grey-border-3;
     padding-bottom: 10px;
     margin: 42px 70px 50px;
   }
@@ -219,6 +221,23 @@
     grid-column-end: 3;
   }
 }
+
+.form__owner-info::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -70px;
+  width: 30%;
+  height: 0;
+  border: @green-border;
+
+  @media (min-width: @tablet-width) {
+    top: -90px;
+    width: 100%;
+  }
+}
+
 .form__owner-info .form__wrapper {
   @media (min-width: @desktop-width) {
     padding: 0 110px;
@@ -234,17 +253,21 @@
 }
 
 .form__owner-info .form__legend {
+  margin: 0 20px;
   padding-top: 25px;
   margin-bottom: 34px;
   position: relative;
 
   @media (min-width: @tablet-width) {
+    margin-left: 30px;
     margin-bottom: 76px;
-    padding-top: 25px;
+    padding: 25px 40px 0;
+    background-color: @basic-white;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 40px;
+    margin-left: 70px;
   }
 }
 
@@ -265,9 +288,27 @@
 }
 /*КОММЕНТАРИЙ*/
 .form__comment {
+  position: relative;
+
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
     grid-column-end: 3;
+  }
+}
+
+.form__comment::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -50px;
+  width: 50%;
+  height: 0;
+  border: @green-border;
+
+  @media (min-width: @tablet-width) {
+    top: -90px;
+    width: 100%;
   }
 }
 
@@ -278,10 +319,19 @@
 }
 
 .form__comment .form__legend {
+  margin-left: 20px;
   margin-bottom: 35px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 75px;
+    background-color: @basic-white;
+    text-align: left;
+    margin-left: 30px;
+    padding: 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
   }
 }
 
@@ -307,6 +357,7 @@
 /*Дополнительно*/
 .form__additional {
   margin-bottom: 18px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 20px;
@@ -319,6 +370,22 @@
   }
 }
 
+.form__additional::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -50px;
+  width: 40%;
+  height: 0;
+  border: @green-border;
+
+  @media (min-width: @tablet-width) {
+    top: -78px;
+    width: 100%;
+  }
+}
+
 .form__additional .form__wrapper {
   @media (min-width: @desktop-width) {
     padding: 0 110px;
@@ -326,12 +393,18 @@
 }
 
 .form__additional .form__legend {
+  margin: 0 20px 38px;
   padding-top: 20px;
-  margin-bottom: 38px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
+    padding: 60px 40px 0;
+    margin-left: 30px;
     margin-bottom: 63px;
+    background-color: @basic-white;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 70px;
   }
 }
 
@@ -392,7 +465,6 @@
     font-size: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
-
   }
 
   @media (min-width: @desktop-width) {
@@ -413,12 +485,10 @@
     .indent-reset;
     margin-left: 60px;
     .set-font-size-line-height(16px; 18px);
-
   }
 
   @media (min-width: @desktop-width) {
     text-align: left;
     .indent-reset;
-
   }
 }
