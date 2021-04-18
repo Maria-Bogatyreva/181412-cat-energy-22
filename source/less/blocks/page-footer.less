@@ -3,40 +3,28 @@
 }
 
 .page-footer__top {
-  padding-top: 26px;
-  padding-bottom: 27px;
-
-  @media (min-width: @tablet-width) {
-    padding-top: 36px;
-  }
-
-  @media (min-width: @desktop-width) {
-    .indent-reset;
-    margin-top: 82px;
-  }
-}
-
-.page-footer__top--no-index {
-  margin-top: 37px;
+  padding: 27px 20px;
   background-color: @basic-grey;
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
+    padding: 62px 70px 60px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0;
+    background-color: @basic-white;
+    .indent-reset;
+    box-sizing: border-box;
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 65px 79px 0;
   }
 }
 
-.page-footer__top--no-index .contacts__partnership {
-  @media (min-width: @tablet-width) {
-    margin-left: 30px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin: 0;
-  }
+.page-footer__top--index {
+  background-color: @basic-white;
 }
 
 .page-footer__logo-caption img {

@@ -41,14 +41,6 @@
 
 /*ФОРМА*/
 .form__form {
-  @media (min-width: @tablet-width) {
-    //display: flex;
-    //flex-wrap: wrap;
-    //outline: 2px solid darkblue;
-    //outline-offset: -3px;
-    margin-bottom: 71px;
-  }
-
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -433,16 +425,17 @@
 .form__fragment-bottom {
   display: flex;
   flex-direction: column;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    margin: 0 70px;
+    margin: 0 70px 75px;
     align-items: center;
     justify-content: flex-start;
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 110px;
+    margin: 0 110px 82px;
     grid-column-start: 1;
     grid-column-end: 3;
 
