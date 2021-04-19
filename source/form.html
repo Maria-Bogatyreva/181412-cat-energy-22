@@ -50,14 +50,15 @@
     </header>
 
     <main class="page-main">
+      <div class="wrapper form__wrapper">
         <h1 class="page-main__title form__title">Подбор программы</h1>
+        <p class="page-main__content form__content">Заполните анкету, и мы подберем <br> программу  питания для вашего кота</p>
+      </div>
         <section class="form">
           <h2 class="visually-hidden">Заполните форму</h2>
-          <p class="page-main__content form__content">Заполните анкету, и мы подберем <br> программу  питания для вашего кота</p>
-
           <form class="form__form" action="https://echo.htmlacademy.ru" method="POST"  id="form">
             <div class="form__fragment-top">
-<!-- ОБЩАЯ ИНФОРМАЦИЯ О КОТЕ-->
+              <!-- ОБЩАЯ ИНФОРМАЦИЯ О КОТЕ-->
               <fieldset class="form__fieldset form__cat-info">
                 <legend class="visually-hidden">Общая информация о коте</legend>
                 <div class="wrapper form__wrapper">
@@ -77,7 +78,7 @@
                   </div>
                 </div>
               </fieldset>
-<!-- ПРОГРАММЫ-->
+              <!-- ПРОГРАММЫ-->
               <fieldset class="form__fieldset form__programm">
                   <legend class="visually-hidden">Выберите подходящую программу</legend>
 
@@ -99,7 +100,7 @@
                   </ul>
               </fieldset>
             </div>
-<!-- КОНТАКТНЫЕ ДАННЫЕ ВЛАДЕЛЬЦА КОТА-->
+            <!-- КОНТАКТНЫЕ ДАННЫЕ ВЛАДЕЛЬЦА КОТА-->
             <fieldset class="form__fieldset form__owner-info">
                 <legend class="form__legend">Контактные данные (владельца кота)</legend>
                 <div class="wrapper form__wrapper">
@@ -118,7 +119,7 @@
                 </ul>
               </div>
             </fieldset>
-<!-- КОММЕНТАРИЙ-->
+            <!-- КОММЕНТАРИЙ-->
             <fieldset class="form__fieldset form__comment">
               <legend class="form__legend">Комментарий</legend>
               <div class="wrapper form__wrapper">
@@ -127,7 +128,7 @@
                 <textarea class="form__textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
-<!-- ДОПОЛНИТЕЛЬНО-->
+            <!-- ДОПОЛНИТЕЛЬНО-->
             <fieldset class="form__fieldset form__additional">
 
                 <legend class="form__legend">Дополнительно</legend>

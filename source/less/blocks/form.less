@@ -1,24 +1,7 @@
 .form {
-  @media (min-width: @tablet-width) {
-    //padding-left: 40px;
-    //padding-right: 40px;
-  }
-
   @media (min-width: @desktop-width) {
-    padding: 0;
-  }
-}
-
-/*Верхний заголовок*/
-.form__title {
-  margin-left: 20px;
-
-  @media (min-width: @tablet-width) {
-    margin-left: 70px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-left: 110px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }
 
@@ -26,16 +9,11 @@
 .form__content {
   text-align: left;
   margin-bottom: 38px;
-  margin-left: 20px;
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height(20px; 30px);
     margin-bottom: 66px;
-    margin-left: 71px;
-  }
 
-  @media (min-width: @desktop-width) {
-    margin-left: 111px;
   }
 }
 
@@ -53,11 +31,14 @@
     padding: 0 70px;
     margin: 0 auto;
     //outline: 3px solid green;
-    outline-offset: -3px;
+    //outline-offset: -3px;
   }
 
   @media (min-width: @desktop-width) {
     .indent-reset;
+    padding: 0 110px;
+    max-width: 1220px;
+    margin: 0 auto;
   }
 }
 
