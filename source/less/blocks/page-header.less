@@ -8,7 +8,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__background::before {
+  .page-header__index::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -16,7 +16,7 @@
     right: 0;
     width: 50%;
     height: 704px;
-    background-color: #65a93c;
+    background-color: #62a53b;
     background-image: url("../img/background-desktop.jpg");
     background-repeat: no-repeat;
     background-size: auto 694px;
@@ -32,50 +32,12 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    width: 708px;
-    margin: 0 auto;
+    margin: 0 70px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    max-width: 1220px;
     margin: 0 auto;
-  }
-}
-/*Стили МОБИЛЬНОГО меню*/
-.page-header__top {
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 63px;
-  border-bottom: @grey-border;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: @tablet-width) {
-    border: none;
-    height: 68px;
-  }
-}
-
-.page-header__logo-image {
-  width: 33px;
-  height: 37px;
-}
-
-.page-header__logo-caption {
-  width: 101px;
-  height: 18px;
-}
-
-.page-header__toggle {
-  width: 24px;
-  height: 24px;
-  .indent-reset;
-  border: none;
-  background: @basic-white;
-
-  @media (min-width: @tablet-width) {
-    display: none;
   }
 }
 
@@ -84,7 +46,7 @@
   @media (min-width: @tablet-width) {
     width: 62%;
     //outline: 3px solid tomato;
-    outline-offset: -3px;
+    //outline-offset: -3px;
   }
 
   @media (min-width: @desktop-width) {
@@ -130,22 +92,72 @@
   }
 
   @media (min-width: @desktop-width) {
-    color: @basic-white;
+    color: @basic-black;
     .set-font-size-line-height(20px; 30px);
   }
-}
-
-.page-header__main-nav-item:last-child a {
-  border-bottom: none;
 }
 
 .page-header__main-nav-item--active a {
   @media (min-width: @tablet-width) {
     border-bottom: @green-border;
   }
+}
+/*Корректировка header для ГЛАВНОЙ*/
+.page-header__index .page-header__main-nav-item a {
+  @media (min-width: @tablet-width) {
+    color: @basic-black;
+  }
+
+  @media (min-width: @desktop-width) {
+    color: @basic-white;
+  }
+}
+
+.page-header__index .page-header__main-nav-item--active a {
+  @media (min-width: @tablet-width) {
+    border-bottom: @green-border;
+  }
 
   @media (min-width: @desktop-width) {
     border-bottom: @white-border;
+  }
+}
+
+/*Стили МОБИЛЬНОГО меню*/
+.page-header__top {
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 63px;
+  border-bottom: @grey-border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    height: 68px;
+  }
+}
+
+.page-header__logo-image {
+  width: 33px;
+  height: 37px;
+}
+
+.page-header__logo-caption {
+  width: 101px;
+  height: 18px;
+}
+
+.page-header__toggle {
+  width: 24px;
+  height: 24px;
+  .indent-reset;
+  border: none;
+  background: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 /*Меню открыто: крест + навигация ЕСТЬ*/

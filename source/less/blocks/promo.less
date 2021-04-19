@@ -4,7 +4,8 @@
   height: 473px;
   background-image: url("../img/background-img.jpg"); //зеленый кот
   background-repeat: no-repeat;
-  background-size: 100% 302px;
+  background-position-y: 0;
+  background-position-x: center;
   padding-top: 27px;
 
   @media (min-width: @tablet-width) {
@@ -17,6 +18,20 @@
   @media (min-width: @desktop-width) {
     height: 530px;
     padding-top: 104px;
+  }
+}
+
+.promo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  height: 302px;
+  width: 100%;
+  background-color: #62a53b;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
@@ -61,6 +76,9 @@
 }
 
 .promo__image {
+  display: block;
+  margin: 0 auto;
+
   @media (min-width: @tablet-width) {
     position: absolute;
     left: 30%;

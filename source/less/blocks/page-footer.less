@@ -1,24 +1,32 @@
 .page-footer {
   position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .page-footer__top {
-  padding-top: 26px;
-  padding-bottom: 27px;
+  padding: 27px 20px;
+  background-color: @basic-grey;
 
   @media (min-width: @tablet-width) {
-    padding-top: 36px;
+    padding: 62px 70px 60px;
   }
 
   @media (min-width: @desktop-width) {
+    background-color: @basic-white;
     .indent-reset;
-    margin-top: 82px;
+    box-sizing: border-box;
+    width: 570px;
+    height: 201px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding: 65px 79px 0;
   }
 }
 
-.page-footer__top--no-index {
-  margin-top: 37px;
-  background-color: @basic-grey;
+.page-footer__top--index {
+  background-color: @basic-white;
 }
 
 .page-footer__logo-caption img {
