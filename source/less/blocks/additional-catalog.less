@@ -35,6 +35,7 @@
 .additional-catalog__list {
   list-style: none;
   .indent-reset;
+  margin-bottom: 40px;
 
   @media (min-width: @desktop-width) {
     width: 896px;
@@ -42,9 +43,14 @@
 }
 
 .additional-catalog__item {
-  padding-top: 15px;
-  padding-bottom: 18px;
-  border-top: 1px solid @special-grey;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border-top: @test-border;
+  //border-top: 1px solid @special-grey;
+}
+
+.additional-catalog__item:last-child {
+  border-bottom: @test-border;
 }
 
 /*Акция*/
@@ -52,6 +58,7 @@
   background-image: url("../img/background-image-catalog.jpg");
   background-repeat: no-repeat;
   height: 289px;
+  margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
     margin-top: 70px;
