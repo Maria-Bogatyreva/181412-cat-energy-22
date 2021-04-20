@@ -4,7 +4,6 @@
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
-
     flex-direction: row;
     justify-content: space-between;
     padding-right: 38px;
@@ -13,8 +12,11 @@
 
   @media (min-width: @desktop-width) {
     .indent-reset;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    align-items: baseline;
+    padding: 15px 0 14px;
+    margin: 0 0 2px;
+    border: none;
+    border-top: @test-border;
   }
 }
 /*Заголовок карточки*/
@@ -78,5 +80,6 @@
 
   @media (min-width: @desktop-width) {
     width: 244px;
+    margin: 0;
   }
 }

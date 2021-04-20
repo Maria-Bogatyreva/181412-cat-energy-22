@@ -6,10 +6,23 @@
     padding-top: 67px;
   }
 
+    @media (min-width: @desktop-width) {
+    padding: 77px 110px 10px;
+  }
+}
+
+.additional-catalog__wrapper {
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: @desktop-width) {
+    .indent-reset;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
   }
 }
 
@@ -40,6 +53,7 @@
 
   @media (min-width: @desktop-width) {
     width: 896px;
+    margin-bottom: 40px;
   }
 }
 
