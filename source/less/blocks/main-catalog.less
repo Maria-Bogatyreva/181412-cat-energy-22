@@ -1,5 +1,6 @@
 .main-catalog__list {
   .indent-reset;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -7,6 +8,7 @@
   //outline-offset: -3px;
 
   @media (min-width: @tablet-width) {
+    width: 708px;
     padding: 0 30px 0;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,6 +24,8 @@
 }
 
 .main-catalog__item {
+  width: 320px;
+  margin: 0 auto;
   border-top: @grey-border-5;
   box-sizing: border-box;
   padding-left: 20px;
