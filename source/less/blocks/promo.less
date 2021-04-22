@@ -8,6 +8,11 @@
   background-position-x: center;
   padding-top: 27px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-img@2x.jpg");
+    background-size: contain;
+  }
+
   @media (min-width: @tablet-width) {
     height: 809px;
     background-image: none;
