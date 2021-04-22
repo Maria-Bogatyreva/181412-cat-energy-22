@@ -12,8 +12,11 @@
 
   @media (min-width: @desktop-width) {
     .indent-reset;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    align-items: baseline;
+    padding: 15px 0 14px;
+    margin: 0 0 2px;
+    border: none;
+    border-top: @grey-border-2;
   }
 }
 /*Заголовок карточки*/
@@ -27,7 +30,7 @@
   .indent-reset;
   .oswald-regular;
   .set-font-size-line-height (16px; 16px);
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height (20px; 20px);
@@ -44,7 +47,8 @@
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height(16px; 20px);
-    width: 218px;
+    width: auto;
+    .indent-reset;
   }
 
   @media (min-width: @desktop-width) {
@@ -57,6 +61,12 @@
   .indent-reset;
 }
 
+.add-product__price {
+  @media (min-width: @tablet-width) {
+    margin-left: 50px;
+  }
+}
+
 /*Кнопка заказать*/
 .add-product__button {
   width: 100%;
@@ -64,7 +74,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  @media (min-width: @tablet-width) {
+    margin-top: 16px;
+  }
+
   @media (min-width: @desktop-width) {
     width: 244px;
+    margin: 0;
   }
 }

@@ -7,40 +7,53 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <div class="page-header__wrapper wrapper">
-        <div class="page-header__logo">
-          <a class="page-header__logo-image" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
-          </a>
+    <header class="page-header page-header__menu-opened">
+      <div class="page-header__wrapper">
+        <div class="page-header__top ">
+            <a class="page-header__logo-image">
+              <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
+            </a>
 
-          <a class="page-header__logo-caption"  href="index.html">
-            <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
-          </a>
+            <a class="page-header__logo-caption">
+              <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
+            </a>
 
-          <button class="page-header__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
+            <button class="page-header__toggle" type="button">
+              <svg class="page-header__toggle--cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+                <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+              </svg>
+
+              <svg class="page-header__toggle--burger" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+                <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+                <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+              </svg>
+
+              <span class="visually-hidden">Открыть меню</span>
+            </button>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active">
+        <nav class="page-header__main-nav">
+          <ul class="page-header__main-nav-list">
+            <li class="page-header__main-nav-item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a>Каталог продукции</a>
+            <li class="page-header__main-nav-item page-header__main-nav-item--active">
+              <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="main-nav__item">
+            <li class="page-header__main-nav-item ">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
-        </div>
+      </div>
     </header>
 
     <main class="page-main">
       <div class="wrapper">
         <h1 class="page-main__title">Каталог продукции</h1>
+      </div>
+
         <section class="main-catalog">
           <h2 class="visually-hidden">Основные товары</h2>
           <ul class="main-catalog__list">
@@ -57,7 +70,7 @@
                   <table class="product__table">
                     <tr class="product__table-line">
                       <td class="product__table-cell product__parameter">Масса</td>
-                      <td class="product__table-cell product__value">500г</td>
+                      <td class="product__table-cell product__value">500 г</td>
                     </tr>
                     <tr class="product__table-line">
                       <td class="product__table-cell product__parameter">Вкус</td>
@@ -84,7 +97,7 @@
                   <table class="product__table">
                     <tr>
                       <td class="product__parameter">Масса</td>
-                      <td class="product__value">1000г</td>
+                      <td class="product__value">1000 г</td>
                     </tr>
                     <tr>
                       <td class="product__parameter">Вкус</td>
@@ -110,7 +123,7 @@
                   <table class="product__table">
                     <tr>
                       <td class="product__parameter">Масса</td>
-                      <td class="product__value">500г</td>
+                      <td class="product__value">500 г</td>
                     </tr>
                     <tr>
                       <td class="product__parameter">Вкус</td>
@@ -136,7 +149,7 @@
                   <table class="product__table">
                     <tr>
                       <td class="product__parameter">Масса</td>
-                      <td class="product__value">1000г</td>
+                      <td class="product__value">1000 г</td>
                     </tr>
                     <tr>
                       <td class="product__parameter">Вкус</td>
@@ -165,7 +178,7 @@
                 <table class="product__table">
                   <tr>
                     <td class="product__parameter">Масса</td>
-                    <td class="product__value">500г</td>
+                    <td class="product__value">500 г</td>
                   </tr>
                   <tr>
                     <td class="product__parameter">Вкус</td>
@@ -193,7 +206,7 @@
                   <table class="product__table">
                     <tr>
                       <td class="product__parameter">Масса</td>
-                      <td class="product__value">1000г</td>
+                      <td class="product__value">1000 г</td>
                     </tr>
                     <tr>
                       <td class="product__parameter">Вкус</td>
@@ -221,7 +234,7 @@
                   <table class="product__table">
                     <tr>
                       <td class="product__parameter">Масса</td>
-                      <td class="product__value">500г</td>
+                      <td class="product__value">500 г</td>
                     </tr>
                     <tr>
                       <td class="product__parameter">Вкус</td>
@@ -238,74 +251,78 @@
             </li>
 
             <li class="main-catalog__item product product--view-more">
-              <a class="product__link-title" href="#">
-                <h4 class="product__title">Показать еще 100500 товаров</h4>
+              <a class="product__link-title product__link-title--view-more" href="#">
+                <h4 class="product__title product__title--view-more">Показать еще 100500 товаров</h4>
               </a>
-              <p class="product__text">На самом деле вкусов гораздо больше!</p>
+              <p class="product__text product__text--view-more">На самом деле вкусов гораздо больше!</p>
               <a class="product__button button product__button--view-more" href="#">Показать все</a>
             </li>
           </ul>
         </section>
 
         <section class="additional-catalog">
-          <h2 class="additional-catalog__title">Дополнительные товары</h2>
-          <ul class="additional-catalog__list">
-            <li class="additional-catalog__item add-product">
+
+            <h2 class="additional-catalog__title">Дополнительные товары</h2>
+
+
+          <div class="additional-catalog__intro">
+            <ul class="additional-catalog__list">
+              <li class="additional-catalog__item add-product">
                 <a class="add-product__link-title" href="#">
                   <h4 class="add-product__title">Сахарозаменитель</h4>
                 </a>
-              <div class="add-product__description">
-                <p class="add-product__amount">1 упаковка (100 г)</p>
-                <p class="add-product__price">200 P.</p>
-              </div>
-              <a class="add-product__button button" href="#">Заказать</a>
-            </li>
+                <div class="add-product__description">
+                  <p class="add-product__amount">1 упаковка (100 г)</p>
+                  <p class="add-product__price">200 P.</p>
+                </div>
+                <a class="add-product__button button" href="#">Заказать</a>
+              </li>
 
-            <li class="additional-catalog__item add-product">
-              <a class="add-product__link-title" href="#">
-                <h4 class="add-product__title">Питьевая вода</h4>
-              </a>
-              <div class="add-product__description">
-                <p class="add-product__amount">5 литров</p>
-                <p class="add-product__price">50 P.</p>
-              </div>
-              <a class="add-product__button button" href="#">Заказать</a>
-            </li>
-            <li class="additional-catalog__item add-product">
-              <a class="add-product__link-title" href="#">
-                <h4 class="add-product__title">Молоко</h4>
-              </a>
-              <div class="add-product__description">
-                <p class="add-product__amount">1 литр</p>
-                <p class="add-product__price">100 P.</p>
-              </div>
-              <a class="add-product__button button" href="#">Заказать</a>
-            </li>
-            <li class="additional-catalog__item add-product">
-              <a class="add-product__link-title" href="#">
-                <h4 class="add-product__title">Витамины</h4>
-              </a>
-              <div class="add-product__description">
-                <p class="add-product__amount">1 упаковка (30 г)</p>
-                <p class="add-product__price">300 P.</p>
-              </div>
-              <a class="add-product__button button" href="#">Заказать</a>
-            </li>
-          </ul>
-          <div class="additional-catalog__action">
-            <p class="additional-catalog__action-text">
-              Закажите все и получите чехол для кота в подарок!
-            </p>
+              <li class="additional-catalog__item add-product">
+                <a class="add-product__link-title" href="#">
+                  <h4 class="add-product__title">Питьевая вода</h4>
+                </a>
+                <div class="add-product__description">
+                  <p class="add-product__amount">5 литров</p>
+                  <p class="add-product__price">50 P.</p>
+                </div>
+                <a class="add-product__button button" href="#">Заказать</a>
+              </li>
+              <li class="additional-catalog__item add-product">
+                <a class="add-product__link-title" href="#">
+                  <h4 class="add-product__title">Молоко</h4>
+                </a>
+                <div class="add-product__description">
+                  <p class="add-product__amount">1 литр</p>
+                  <p class="add-product__price">100 P.</p>
+                </div>
+                <a class="add-product__button button" href="#">Заказать</a>
+              </li>
+              <li class="additional-catalog__item add-product">
+                <a class="add-product__link-title" href="#">
+                  <h4 class="add-product__title">Витамины</h4>
+                </a>
+                <div class="add-product__description">
+                  <p class="add-product__amount">1 упаковка (30 г)</p>
+                  <p class="add-product__price">300 P.</p>
+                </div>
+                <a class="add-product__button button" href="#">Заказать</a>
+              </li>
+            </ul>
+            <div class="additional-catalog__action">
+              <p class="additional-catalog__action-text">
+                Закажите все и получите чехол для кота в подарок!
+              </p>
+            </div>
           </div>
         </section>
-      </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__top contacts">
         <div class="contacts__content">
           <p class="contacts__partnership">Приглашаем <br> к&nbsp;сотрудничеству <br> дилеров!</p>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></address></address>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span class="contacts__address-city">Санкт-Петербург</span></address>
         </div>
       </div>
 
@@ -313,9 +330,7 @@
         <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617980898292!5m2!1sru!2sru"
         allowfullscreen=""
         loading="lazy"
-        width="100%"
         height="662"
-        frameborder="0"
         style="border:0; margin-top: -150px;"></iframe>
       </div>
 
