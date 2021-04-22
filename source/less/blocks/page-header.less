@@ -140,14 +140,28 @@
   }
 }
 
-.page-header__logo-image {
+.page-header__logo-image img {
   width: 33px;
   height: 37px;
+
+  @media (min-width: @tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header__logo-caption {
   width: 101px;
   height: 18px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .page-header__toggle {
