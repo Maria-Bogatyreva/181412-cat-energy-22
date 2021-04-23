@@ -137,8 +137,15 @@
 
             <div class="demonstration__slider slider">
               <div class="slider__wrapper">
-              <img class="slider__img slider__img--active" src="img/before-mobile.png" alt="Толстый кот">
-              <!-- <img class="slider__img" src="img/after-mobile.png" alt="Худой кот"> -->
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="slider__img slider__img--before " src="img/before-mobile.png" srcset="img/before-mobile@2x.png" alt="Толстый кот" width="311" height="232">
+                </picture>
+
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="slider__img slider__img--after slider__img--hide" src="img/after-mobile.png" srcset="img/after-mobile@2x.png" alt="Худой кот" width="240" height="251">
+                </picture>
             </div>
 
             <div class="slider__buttons">

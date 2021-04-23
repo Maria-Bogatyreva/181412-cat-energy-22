@@ -1,5 +1,4 @@
 const pageHeader = document.querySelector('.page-header');
-console.log(pageHeader);
 const navToggle = pageHeader.querySelector('.page-header__toggle');
 
 navToggle.addEventListener('click', function() {
