@@ -116,47 +116,55 @@
 }
 /*Цифры в планшете и десктопе*/
 .technology__item--structure::after {
-  content: "1";
-  position: absolute;
-  font-size: 280px;
-  color: @basic-grey;
-  .oswald-regular;
-  z-index: -1;
-  top: 96px;
-  right: 20px;
+  @media (min-width: @tablet-width) {
+    content: "1";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 20px;
+  }
 }
 
 .technology__item--release::after {
-  content: "2";
-  position: absolute;
-  font-size: 280px;
-  color: @basic-grey;
-  .oswald-regular;
-  z-index: -1;
-  top: 96px;
-  right: 5px;
+  @media (min-width: @tablet-width) {
+    content: "2";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 5px;
+  }
 }
 
 .technology__item--schedule::after {
-  content: "3";
-  position: absolute;
-  font-size: 280px;
-  color: @basic-grey;
-  .oswald-regular;
-  z-index: -1;
-  top: 96px;
-  right: 2px;
+  @media (min-width: @tablet-width) {
+    content: "3";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 2px;
+  }
 }
 
 .technology__item--change::after {
-  content: "4";
-  position: absolute;
-  font-size: 280px;
-  color: @basic-grey;
-  .oswald-regular;
-  z-index: -1;
-  top: 96px;
-  right: 1px;
+  @media (min-width: @tablet-width) {
+    content: "4";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 1px;
+  }
 }
 
 /*Контент карточки*/
