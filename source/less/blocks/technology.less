@@ -82,7 +82,8 @@
     top: 7px;
   }
 }
-.technology__item--structure:before {
+
+.technology__item--structure::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-structure.svg");
@@ -90,7 +91,7 @@
   background-position: center;
 }
 
-.technology__item--release:before {
+.technology__item--release::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-release.svg");
@@ -98,7 +99,7 @@
   background-position: center;
 }
 
-.technology__item--schedule:before {
+.technology__item--schedule::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-schedule.svg");
@@ -106,7 +107,7 @@
   background-position: center;
 }
 
-.technology__item--change:before {
+.technology__item--change::before {
   content: "";
   position: absolute;
   background-image: url("../img/icon-change.svg");
@@ -114,7 +115,7 @@
   background-position: center;
 }
 /*Цифры в планшете и десктопе*/
-.technology__item--structure:after {
+.technology__item--structure::after {
   content: "1";
   position: absolute;
   font-size: 280px;
@@ -124,7 +125,8 @@
   top: 96px;
   right: 20px;
 }
-.technology__item--release:after {
+
+.technology__item--release::after {
   content: "2";
   position: absolute;
   font-size: 280px;
@@ -134,7 +136,8 @@
   top: 96px;
   right: 5px;
 }
-.technology__item--schedule:after {
+
+.technology__item--schedule::after {
   content: "3";
   position: absolute;
   font-size: 280px;
@@ -144,7 +147,8 @@
   top: 96px;
   right: 2px;
 }
-.technology__item--change:after {
+
+.technology__item--change::after {
   content: "4";
   position: absolute;
   font-size: 280px;
