@@ -8,6 +8,7 @@
 
   @media (min-width: @desktop-width) {
     border: none;
+    padding-bottom: 20px;
   }
 }
 
@@ -17,12 +18,16 @@
   font-size: 36px;
   line-height: 40px;
   color: @basic-black;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 65px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 63px;
   }
 }
 
@@ -30,7 +35,7 @@
   list-style: none;
   .indent-reset;
   display: grid;
-  padding-left: 80px;
+
 
   @media (min-width: @tablet-width) {
     .indent-reset;
@@ -45,18 +50,120 @@
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-gap: 74px;
+    grid-gap: 75px;
   }
 }
 /*Карточка*/
 .technology__item {
+  position: relative;
   margin-bottom: 26px;
+  padding-left: 80px;
 
   @media (min-width: @tablet-width) {
     .indent-reset;
     width: 250px;
     padding-top: 119px;
     padding-bottom: 50px;
+  }
+}
+/*Иконки*/
+.technology__item::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: @basic-green;
+  left: 0;
+  top: -2px;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: 7px;
+  }
+}
+
+.technology__item--structure::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-structure.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.technology__item--release::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-release.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.technology__item--schedule::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-schedule.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.technology__item--change::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-change.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/*Цифры в планшете и десктопе*/
+.technology__item--structure::after {
+  @media (min-width: @tablet-width) {
+    content: "1";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 20px;
+  }
+}
+
+.technology__item--release::after {
+  @media (min-width: @tablet-width) {
+    content: "2";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 5px;
+  }
+}
+
+.technology__item--schedule::after {
+  @media (min-width: @tablet-width) {
+    content: "3";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 2px;
+  }
+}
+
+.technology__item--change::after {
+  @media (min-width: @tablet-width) {
+    content: "4";
+    position: absolute;
+    font-size: 280px;
+    color: @basic-grey;
+    .oswald-regular;
+    z-index: -1;
+    top: 96px;
+    right: 1px;
   }
 }
 
