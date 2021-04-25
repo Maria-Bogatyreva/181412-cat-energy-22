@@ -63,6 +63,10 @@
 .form__label--radio {
   color: @special_dark-grey-2;
   padding: 6px 0 6px 45px;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 0 6px 59px;
+  }
 }
 
 .form__label--radio::before {
@@ -74,6 +78,11 @@
   height: 30px;
   border: @grey-border-2;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .form__input-radio:checked + label::after {
@@ -85,10 +94,16 @@
   height: 13.5px;
   background-color: @basic-green;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
+  }
 }
 
-
-/*Сами инпуты*/
+/*Текстовые инпуты*/
 .form__input {
   flex-grow: 1;
   text-transform: uppercase;
@@ -156,20 +171,14 @@
   @media (min-width: @tablet-width) {
     //border: @test-border;
     border: @grey-border-3;
-    padding-bottom: 10px;
+    padding: 23px 28px 10px;
     margin: 52px 70px 50px;
   }
 
   @media (min-width: @desktop-width) {
     .indent-reset;
-
+    padding: 23px 28px 10px;
     margin-bottom: 30px;
-  }
-}
-
-.form__list--programm {
-  @media (min-width: @desktop-width) {
-    margin-top: 30px;
   }
 }
 
@@ -177,7 +186,7 @@
   margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 10px;
   }
 }
 
