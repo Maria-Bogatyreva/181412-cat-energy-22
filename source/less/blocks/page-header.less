@@ -1,8 +1,6 @@
 .page-header,
 .page-header__index {
 
-  //outline: 3px solid salmon;
-  //outline-offset: -3px;
   @media (min-width: @tablet-width) {
     padding-top: 28px;
   }
@@ -11,9 +9,16 @@
     width: 1440px;
     max-width: 1440px;
     margin: 0 auto;
+    padding-top: 56px;
+  }
+}
+
+.page-header__index {
+  @media (min-width: @desktop-width) {
     padding-top: 51px;
   }
 }
+
 
 .page-header__index::before {
   @media (min-width: @desktop-width) {

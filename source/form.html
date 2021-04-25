@@ -11,47 +11,51 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
-    <header class="page-header page-header__menu-opened">
-      <div class="page-header__wrapper">
-        <div class="page-header__top ">
-            <a class="page-header__logo-image">
-              <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
-            </a>
+      <header class="page-header page-header__menu-closed">
+        <div class="page-header__wrapper">
+          <div class="page-header__top">
+              <a class="page-header__logo-image">
+                <picture>
+                  <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+                  <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                  <img src="img/logo-mobile.svg" alt="Интернет-магазин Кэт Энерджи" width="33" height="37">
+                </picture>
+              </a>
 
-            <a class="page-header__logo-caption">
-              <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
-            </a>
+              <a class="page-header__logo-caption">
+                <img src="img/logo-slogan.svg" alt="Интернет-магазин Кэт Энерджи" width="101" height="18">
+              </a>
 
-            <button class="page-header__toggle" type="button">
-              <svg class="page-header__toggle--cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
-                <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
-              </svg>
+              <button class="page-header__toggle" type="button">
+                <svg class="page-header__toggle--cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
+                  <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
+                </svg>
 
-              <svg class="page-header__toggle--burger" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
-                <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
-                <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
-              </svg>
+                <svg class="page-header__toggle--burger" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+                  <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+                  <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+                </svg>
 
-              <span class="visually-hidden">Открыть меню</span>
-            </button>
+                <span class="visually-hidden">Открыть меню</span>
+              </button>
+          </div>
+          <nav class="page-header__main-nav">
+            <ul class="page-header__main-nav-list">
+              <li class="page-header__main-nav-item page-header__main-nav-item--active">
+                <a>Главная</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="page-header__main-nav-item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="page-header__main-nav">
-          <ul class="page-header__main-nav-list">
-            <li class="page-header__main-nav-item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="page-header__main-nav-item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="page-header__main-nav-item page-header__main-nav-item--active">
-              <a>Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </header>
 
     <main class="page-main">
       <div class="wrapper form__wrapper">
@@ -65,7 +69,7 @@
               <!-- ОБЩАЯ ИНФОРМАЦИЯ О КОТЕ-->
               <fieldset class="form__fieldset form__cat-info">
                 <legend class="visually-hidden">Общая информация о коте</legend>
-                <div class="wrapper form__wrapper">
+                <div class="form__wrapper">
                   <div class="form__line">
                     <label class="form__label" for="cat-name">Имя:*</label>
                     <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
@@ -107,7 +111,7 @@
             <!-- КОНТАКТНЫЕ ДАННЫЕ ВЛАДЕЛЬЦА КОТА-->
             <fieldset class="form__fieldset form__owner-info">
                 <legend class="form__legend">Контактные данные (владельца кота)</legend>
-                <div class="wrapper form__wrapper">
+                <div class="form__wrapper">
 
                 <ul class="form__list form__list--owner-info">
 
@@ -136,7 +140,7 @@
             <fieldset class="form__fieldset form__additional">
 
                 <legend class="form__legend">Дополнительно</legend>
-                <div class="wrapper form__wrapper">
+                <div class="form__wrapper">
 
                 <ul class="form__list form__list--additional">
                   <li class="form__line">

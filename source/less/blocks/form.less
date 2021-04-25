@@ -9,6 +9,7 @@
 .form__content {
   text-align: left;
   margin-bottom: 38px;
+  margin-top: 37px;
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height(20px; 30px);
@@ -104,6 +105,8 @@
 
 .form__fragment-top {
   @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 80px;
@@ -113,12 +116,13 @@
 }
 /*Общая информация о коте*/
 .form__cat-info {
-  padding-bottom: 9px;
+  padding: 0 20px 9px;
   border-bottom: @grey-border-3;
 
   @media (min-width: @tablet-width) {
+    .indent-reset;
     border: none;
-    padding-bottom: 9px;
+    //padding-bottom: 9px;
   }
 }
 
@@ -132,7 +136,7 @@
 
 .form__cat-info .form__wrapper {
   @media (min-width: @desktop-width) {
-    padding-left: 110px;
+    padding: 0;
   }
 }
 
@@ -153,7 +157,7 @@
 
   @media (min-width: @desktop-width) {
     .indent-reset;
-    margin-right: 110px;
+
     margin-bottom: 30px;
   }
 }
@@ -181,8 +185,8 @@
 }
 /*Контактные данные (владельца кота)*/
 .form__owner-info {
+  padding: 0 20px 12px;
   position: relative;
-  padding-bottom: 14px;
 
   @media (min-width: @tablet-width) {
     padding-bottom: 43px;
@@ -226,7 +230,6 @@
 
 .form__owner-info .form__legend {
   width: 187px;
-  margin: 0 20px;
   padding-top: 25px;
   margin-bottom: 34px;
   position: relative;
@@ -275,7 +278,7 @@
   position: absolute;
   z-index: -1;
   right: 0;
-  top: -50px;
+  top: -49px;
   width: 50%;
   height: 0;
   border-top: @green-border;
@@ -294,7 +297,7 @@
 
 .form__comment .form__legend {
   margin-left: 20px;
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 75px;
@@ -330,7 +333,8 @@
 }
 /*Дополнительно*/
 .form__additional {
-  margin-bottom: 18px;
+  padding: 0 20px;
+  margin-bottom: 20px;
   position: relative;
 
   @media (min-width: @tablet-width) {
@@ -367,7 +371,7 @@
 }
 
 .form__additional .form__legend {
-  margin: 0 20px 38px;
+  margin-bottom: 38px;
   padding-top: 20px;
 
   @media (min-width: @tablet-width) {
