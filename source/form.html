@@ -43,13 +43,13 @@
           </div>
           <nav class="page-header__main-nav">
             <ul class="page-header__main-nav-list">
-              <li class="page-header__main-nav-item page-header__main-nav-item--active">
+              <li class="page-header__main-nav-item">
                 <a>Главная</a>
               </li>
               <li class="page-header__main-nav-item">
                 <a href="catalog.html">Каталог продукции</a>
               </li>
-              <li class="page-header__main-nav-item">
+              <li class="page-header__main-nav-item page-header__main-nav-item--active">
                 <a href="form.html">Подбор программы</a>
               </li>
             </ul>
@@ -69,22 +69,22 @@
               <!-- ОБЩАЯ ИНФОРМАЦИЯ О КОТЕ-->
               <fieldset class="form__fieldset form__cat-info">
                 <legend class="visually-hidden">Общая информация о коте</legend>
-                <div class="wrapper--form">
-                  <div class="form__line">
+                <ul class="form__list form__list--cat-info">
+                  <li class="form__line">
                     <label class="form__label" for="cat-name">Имя:*</label>
                     <input class="form__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
-                  </div>
+                  </li>
 
-                  <div class="form__line">
+                  <li class="form__line">
                     <label class="form__label" for="cat-weight">Вес (кг):*</label>
                     <input class="form__input" type="text" name="cat-weight" id="cat-weight" placeholder="7" required>
-                  </div>
+                  </li>
 
-                  <div class="form__line">
+                  <li class="form__line">
                     <label class="form__label" for="cat-age">Возраст (лет):</label>
                     <input class="form__input" type="text" name="cat-age" id="cat-age" placeholder="7">
-                  </div>
-                </div>
+                  </li>
+                </ul>
               </fieldset>
               <!-- ПРОГРАММЫ-->
               <fieldset class="form__fieldset form__programm">
