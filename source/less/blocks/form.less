@@ -103,6 +103,51 @@
   }
 }
 
+/*Стилизация checkbox*/
+.form__label--checkbox {
+  color: @special_dark-grey-2;
+  padding: 6px 0 6px 45px;
+
+  @media (min-width: @tablet-width) {
+    padding: 7px 0 6px 59px;
+  }
+}
+
+.form__label--checkbox:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: @grey-border-2;
+
+  @media (min-width: @tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.form__input--checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 4px;
+  left: 11px;
+  width: 9px;
+  height: 17px;
+  border-right: @green-border-2;
+  border-bottom: @green-border-2;
+  transform: rotate(45deg);
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    left: 16px;
+    width: 9px;
+    height: 17px;
+  }
+}
+
 /*Текстовые инпуты*/
 .form__input {
   flex-grow: 1;
@@ -169,7 +214,6 @@
   border-bottom: @grey-border-3;
 
   @media (min-width: @tablet-width) {
-    //border: @test-border;
     border: @grey-border-3;
     padding: 23px 28px 10px;
     margin: 52px 70px 50px;
@@ -177,7 +221,7 @@
 
   @media (min-width: @desktop-width) {
     .indent-reset;
-    padding: 23px 28px 10px;
+    padding: 23px 28px 12px;
     margin-bottom: 30px;
   }
 }
@@ -190,13 +234,6 @@
   }
 }
 
-// .form__programm .form__label {
-//   margin-left: 25px;
-
-//   @media (min-width: @tablet-width) {
-//     margin-left: 44px;
-//   }
-// }
 /*Контактные данные (владельца кота)*/
 .form__owner-info {
   padding-bottom: 12px;
@@ -250,7 +287,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 48px;
+    padding-top: 40px;
     margin-left: 70px;
   }
 }
@@ -336,13 +373,8 @@
 }
 /*Дополнительно*/
 .form__additional {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   position: relative;
-
-  @media (min-width: @tablet-width) {
-    padding: 0;
-    margin-bottom: 17px;
-  }
 
   @media (min-width: @desktop-width) {
     grid-column-start: 1;
@@ -356,7 +388,7 @@
   position: absolute;
   z-index: -1;
   right: 0;
-  top: -50px;
+  top: -45px;
   width: 40%;
   height: 0;
   border-top: @green-border;
@@ -368,12 +400,12 @@
 }
 
 .form__additional .form__legend {
-  margin-bottom: 38px;
+  margin-bottom: 34px;
   padding-top: 20px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 60px;
-    margin-bottom: 63px;
+    padding-top: 63px;
+    margin-bottom: 57px;
     background-color: @basic-white;
   }
 
@@ -385,25 +417,25 @@
 
 .form__list--additional {
   @media (min-width: @tablet-width) {
+    width: 565px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
 
-.form__additional .form__line {
-  margin-bottom: 23px;
-
-  @media (min-width: @tablet-width) {
-    margin-bottom: 42px;
-    width: 221px;
+  @media (min-width: @desktop-width) {
+    width: 1195px;
   }
 }
 
-// .form__additional .form__label {
-//   margin-left: 25px;
-// }
+.form__additional .form__line {
+  margin-bottom: 12px;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 27px;
+    width: 221px;
+  }
+}
 /*Для позиционирования кнопки и подписи*/
 .form__fragment-bottom {
   display: flex;
