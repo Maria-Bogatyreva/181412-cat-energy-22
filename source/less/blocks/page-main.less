@@ -26,8 +26,17 @@
 }
 
 .page-main__content {
+  text-align: left;
   .oswald-regular;
   .indent-reset;
   color: @basic-black;
   text-transform: uppercase;
+  margin-bottom: 38px;
+  margin-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(20px; 30px);
+    margin-bottom: 66px;
+    margin-top: 54px;
+  }
 }
