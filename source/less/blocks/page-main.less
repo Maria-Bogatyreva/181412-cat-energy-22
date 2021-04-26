@@ -9,25 +9,34 @@
   line-height: 36px;
   color: @basic-black;
   .indent-reset;
-  padding-top: 27px;
-  margin-bottom: 37px;
+  margin-top: 27px;
+  //margin-bottom: 37px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 58px;
+    margin-top: 58px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 23px;
+    //margin-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 68px;
+    margin-top: 74px;
     //margin-bottom: 56px;
   }
 }
 
 .page-main__content {
+  text-align: left;
   .oswald-regular;
   .indent-reset;
   color: @basic-black;
   text-transform: uppercase;
+  margin-bottom: 38px;
+  margin-top: 37px;
+
+  @media (min-width: @tablet-width) {
+    .set-font-size-line-height(20px; 30px);
+    margin-bottom: 66px;
+    margin-top: 54px;
+  }
 }
