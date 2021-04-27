@@ -1,20 +1,20 @@
 .additional-catalog {
   position: relative;
   padding: 25px 20px 0;
-  width: 280px;
+  width: 320px;
   margin: 0 auto;
   //outline: 3px solid darkblue;
   //outline-offset: -3px;
 
 
   @media (min-width: @tablet-width) {
-    width: 708px;
-    padding: 67px 30px 0;
+    width: 768px;
+    padding: 36px 30px 0;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
-    padding: 77px 110px 0;
+    width: 1440px;
+    padding: 49px 110px 0;
   }
 }
 
@@ -35,20 +35,20 @@
   color: @basic-black;
   margin-bottom: 36px;
   background-color: @basic-white;
-  width: 226px;
-  padding-right: 22px;
+  //width: 226px;
+  margin-right: 34px;
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height(36px; 36px);
-    width: 345px;
+    width: 411px;
     margin-bottom: 80px;
-    padding-left: 40px;
+    padding-left: 36px;
     margin-right: 328px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 30px;
-    left: -30px;
+    padding-left: 40px;
+    left: -40px;
   }
 }
 
@@ -58,17 +58,17 @@
   z-index: -1;
   width: 50%;
   right: 0;
-  top: 37px;
+  top: 41px;
   height: 0;
   border-bottom: @green-border;
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    top: 87px;
+    top: 58px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 101px;
+    top: 72px;
   }
 }
 
@@ -102,25 +102,39 @@
 
 /*Акция*/
 .additional-catalog__action {
-  background-image: url("../img/background-image-catalog.jpg");
+  background-image: url("../img/background-catalog-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 289px;
   margin-bottom: 37px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-catalog-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
+    background-image: url("../img/background-catalog-tablet.jpg");
     margin-top: 70px;
-    width: 100%;
+    //width: 100%;
     height: 200px;
-    background-size: 708px auto;
-    background-position: 50% 60%;
     margin-bottom: 75px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-catalog-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
+    background-image: url("../img/background-catalog-desktop.jpg");
     width: 245px;
     height: 289px;
     margin-top: 0;
     margin-bottom: 88px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-catalog-desktop@2x.jpg");
+    }
   }
 }
 
@@ -129,13 +143,13 @@
   text-align: center;
   .set-font-size-line-height(16px; 20px);
   color: @basic-white;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-right: 50px;
+  margin-left: 50px;
   padding-top: 186px;
 
   @media (min-width: @tablet-width) {
     .indent-reset;
-    width: 160px;
+    width: 162px;
     text-align: left;
     margin-left: 423px;
     padding-top: 71px;

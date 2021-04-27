@@ -11,15 +11,19 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
-    <header class="page-header page-header__menu-opened">
+    <header class="page-header page-header__menu-closed">
       <div class="page-header__wrapper">
-        <div class="page-header__top ">
-            <a class="page-header__logo-image">
-              <img src="img/logo-mobile.svg" alt="Логотип Кэт Энерджи" width="33" height="37">
+        <div class="page-header__top">
+            <a href="index.html" class="page-header__logo-image">
+              <picture>
+                <source media="(min-width: 1220px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img src="img/logo-mobile.svg" alt="Интернет-магазин Кэт Энерджи" width="33" height="37">
+              </picture>
             </a>
 
             <a class="page-header__logo-caption">
-              <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
+              <img src="img/logo-slogan.svg" alt="Интернет-магазин Кэт Энерджи" width="101" height="18">
             </a>
 
             <button class="page-header__toggle" type="button">
@@ -45,7 +49,7 @@
             <li class="page-header__main-nav-item page-header__main-nav-item--active">
               <a href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="page-header__main-nav-item ">
+            <li class="page-header__main-nav-item">
               <a href="form.html">Подбор программы</a>
             </li>
           </ul>
@@ -63,9 +67,11 @@
           <ul class="main-catalog__list">
 
             <li class="main-catalog__item product">
-
                 <a class="product__link-img" href="#">
-                  <img class="product__img" src="img/product-1.png" alt="Cat Energy PRO 500 г" width="68" height="86">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/product-1-tablet.png 1x, img/product-1-tablet@2x.png 2x">
+                    <img class="product__img" src="img/product-1-mobile.png" srcset="img/product-1-mobile@2x.png 2x" alt="Cat Energy PRO 500 г">
+                  </picture>
                 </a>
                 <div class="product__description">
                   <a class="product__link-title" href="#">
@@ -85,14 +91,16 @@
                       <td class="product__table-cell product__value">700 Р.</td>
                     </tr>
                   </table>
-
-              </div>
-              <a class="product__button button" href="#">Заказать</a>
+                </div>
+                <a class="product__button button" href="#">Заказать</a>
             </li>
 
             <li class="main-catalog__item product">
                 <a class="product__link-img" href="#">
-                  <img class="product__img" src="img/product-2.png" alt="Cat Energy PRO 1000 г" width="84" height="100">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/product-2-tablet.png 1x, img/product-2-tablet@2x.png 2x">
+                    <img class="product__img product__img--big" src="img/product-2-mobile.png" srcset="img/product-2-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г">
+                  </picture>
                 </a>
                 <div class="product__description">
                   <a class="product__link-title" href="#">
@@ -113,12 +121,15 @@
                     </tr>
                   </table>
                 </div>
-              <a class="product__button button" href="#">Заказать</a>
+                <a class="product__button button" href="#">Заказать</a>
             </li>
 
             <li class="main-catalog__item product">
                 <a class="product__link-img" href="#">
-                  <img class="product__img" src="img/product-3.png" alt="Cat Energy PRO 500 г" width="68" height="78">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/product-3-tablet.png 1x, img/product-3-tablet@2x.png 2x">
+                    <img class="product__img" src="img/product-3-mobile.png" srcset="img/product-3-mobile@2x.png 2x" alt="Cat Energy PRO 500 г">
+                  </picture>
                 </a>
                 <div class="product__description">
                   <a class="product__link-title" href="#">
@@ -139,12 +150,15 @@
                     </tr>
                   </table>
                 </div>
-              <a class="product__button button" href="#">Заказать</a>
+                <a class="product__button button" href="#">Заказать</a>
             </li>
 
             <li class="main-catalog__item product">
                 <a class="product__link-img" href="#">
-                  <img class="product__img" src="img/product-4.png" alt="Cat Energy PRO 1000 г" width="84" height="100">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/product-4-tablet.png 1x, img/product-4-tablet@2x.png 2x">
+                    <img class="product__img product__img--big" src="img/product-4-mobile.png" srcset="img/product-4-mobile@2x.png 2x" alt="Cat Energy PRO 1000 г">
+                  </picture>
                 </a>
                 <div class="product__description">
                   <a class="product__link-title" href="#">
@@ -165,13 +179,15 @@
                     </tr>
                   </table>
                 </div>
-              <a class="product__button button" href="#">Заказать</a>
+                <a class="product__button button" href="#">Заказать</a>
             </li>
 
             <li class="main-catalog__item product">
-
               <a class="product__link-img" href="#">
-                <img class="product__img" src="img/product-5.png" alt="Cat Energy SLIM 500 г" width="68" height="78">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/product-5-tablet.png 1x, img/product-5-tablet@2x.png 2x">
+                  <img class="product__img" src="img/product-5-mobile.png" srcset="img/product-5-mobile@2x.png 2x" alt="Cat Energy SLIM 500 г">
+                </picture>
               </a>
 
               <div class="product__description">
@@ -199,9 +215,11 @@
             </li>
 
             <li class="main-catalog__item product">
-
                 <a class="product__link-img" href="#">
-                  <img class="product__img" src="img/product-6.png" alt="Cat Energy SLIM 1000 г" width="84" height="100">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/product-6-tablet.png 1x, img/product-6-tablet@2x.png 2x">
+                    <img class="product__img product__img--big" src="img/product-6-mobile.png" srcset="img/product-6-mobile@2x.png 2x" alt="Cat Energy SLIM 1000 г">
+                  </picture>
                 </a>
                 <div class="product__description">
                   <a class="product__link-title" href="#">
@@ -223,13 +241,15 @@
                   </table>
                 </div>
 
-              <a class="product__button button" href="#">Заказать</a>
+                <a class="product__button button" href="#">Заказать</a>
             </li>
 
             <li class="main-catalog__item product">
-
                 <a class="product__link-img" href="#">
-                  <img class="product__img" src="img/product-7.png" alt="Cat Energy SLIM 500 г" width="72" height="84">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/product-7-tablet.png 1x, img/product-7-tablet@2x.png 2x">
+                    <img class="product__img" src="img/product-7-mobile.png" srcset="img/product-7-mobile@2x.png 2x" alt="Cat Energy SLIM 500 г">
+                  </picture>
                 </a>
                 <div class="product__description">
                   <a class="product__link-title" href="#">
@@ -250,8 +270,7 @@
                     </tr>
                   </table>
                 </div>
-
-              <a class="product__button button" href="#">Заказать</a>
+                <a class="product__button button" href="#">Заказать</a>
             </li>
 
             <li class="main-catalog__item product product--view-more">
@@ -265,60 +284,57 @@
         </section>
 
         <section class="additional-catalog">
-
             <h2 class="additional-catalog__title">Дополнительные товары</h2>
+            <div class="additional-catalog__intro">
+              <ul class="additional-catalog__list">
+                <li class="additional-catalog__item add-product">
+                  <a class="add-product__link-title" href="#">
+                    <h4 class="add-product__title">Сахарозаменитель</h4>
+                  </a>
+                  <div class="add-product__description">
+                    <p class="add-product__amount">1 упаковка (100 г)</p>
+                    <p class="add-product__price">200 P.</p>
+                  </div>
+                  <a class="add-product__button button" href="#">Заказать</a>
+                </li>
 
-
-          <div class="additional-catalog__intro">
-            <ul class="additional-catalog__list">
-              <li class="additional-catalog__item add-product">
-                <a class="add-product__link-title" href="#">
-                  <h4 class="add-product__title">Сахарозаменитель</h4>
-                </a>
-                <div class="add-product__description">
-                  <p class="add-product__amount">1 упаковка (100 г)</p>
-                  <p class="add-product__price">200 P.</p>
-                </div>
-                <a class="add-product__button button" href="#">Заказать</a>
-              </li>
-
-              <li class="additional-catalog__item add-product">
-                <a class="add-product__link-title" href="#">
-                  <h4 class="add-product__title">Питьевая вода</h4>
-                </a>
-                <div class="add-product__description">
-                  <p class="add-product__amount">5 литров</p>
-                  <p class="add-product__price">50 P.</p>
-                </div>
-                <a class="add-product__button button" href="#">Заказать</a>
-              </li>
-              <li class="additional-catalog__item add-product">
-                <a class="add-product__link-title" href="#">
-                  <h4 class="add-product__title">Молоко</h4>
-                </a>
-                <div class="add-product__description">
-                  <p class="add-product__amount">1 литр</p>
-                  <p class="add-product__price">100 P.</p>
-                </div>
-                <a class="add-product__button button" href="#">Заказать</a>
-              </li>
-              <li class="additional-catalog__item add-product">
-                <a class="add-product__link-title" href="#">
-                  <h4 class="add-product__title">Витамины</h4>
-                </a>
-                <div class="add-product__description">
-                  <p class="add-product__amount">1 упаковка (30 г)</p>
-                  <p class="add-product__price">300 P.</p>
-                </div>
-                <a class="add-product__button button" href="#">Заказать</a>
-              </li>
-            </ul>
-            <div class="additional-catalog__action">
-              <p class="additional-catalog__action-text">
-                Закажите все и получите чехол для кота в подарок!
-              </p>
+                <li class="additional-catalog__item add-product">
+                  <a class="add-product__link-title" href="#">
+                    <h4 class="add-product__title">Питьевая вода</h4>
+                  </a>
+                  <div class="add-product__description">
+                    <p class="add-product__amount">5 литров</p>
+                    <p class="add-product__price">50 P.</p>
+                  </div>
+                  <a class="add-product__button button" href="#">Заказать</a>
+                </li>
+                <li class="additional-catalog__item add-product">
+                  <a class="add-product__link-title" href="#">
+                    <h4 class="add-product__title">Молоко</h4>
+                  </a>
+                  <div class="add-product__description">
+                    <p class="add-product__amount">1 литр</p>
+                    <p class="add-product__price">100 P.</p>
+                  </div>
+                  <a class="add-product__button button" href="#">Заказать</a>
+                </li>
+                <li class="additional-catalog__item add-product">
+                  <a class="add-product__link-title" href="#">
+                    <h4 class="add-product__title">Витамины</h4>
+                  </a>
+                  <div class="add-product__description">
+                    <p class="add-product__amount">1 упаковка (30 г)</p>
+                    <p class="add-product__price">300 P.</p>
+                  </div>
+                  <a class="add-product__button button" href="#">Заказать</a>
+                </li>
+              </ul>
+              <div class="additional-catalog__action">
+                <p class="additional-catalog__action-text">
+                  Закажите все и получите чехол для кота в подарок!
+                </p>
+              </div>
             </div>
-          </div>
         </section>
     </main>
 

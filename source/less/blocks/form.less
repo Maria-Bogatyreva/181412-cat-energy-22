@@ -69,6 +69,12 @@
   }
 }
 
+.form__label--radio:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 3px;
+  outline-style: auto;
+}
+
 .form__label--radio::before {
   content: "";
   position: absolute;
@@ -111,6 +117,12 @@
   @media (min-width: @tablet-width) {
     padding: 7px 0 6px 59px;
   }
+}
+
+.form__label--checkbox:focus-visible {
+  outline: 2px solid black;
+  outline-offset: 3px;
+  outline-style: auto;
 }
 
 .form__label--checkbox::before {
