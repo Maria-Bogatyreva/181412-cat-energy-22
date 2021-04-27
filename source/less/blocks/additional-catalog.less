@@ -102,25 +102,39 @@
 
 /*Акция*/
 .additional-catalog__action {
-  background-image: url("../img/background-image-catalog.jpg");
+  background-image: url("../img/background-catalog-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   height: 289px;
   margin-bottom: 37px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/background-catalog-mobile@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
+    background-image: url("../img/background-catalog-tablet.jpg");
     margin-top: 70px;
-    width: 100%;
+    //width: 100%;
     height: 200px;
-    background-size: 708px auto;
-    background-position: 50% 60%;
     margin-bottom: 75px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-catalog-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
+    background-image: url("../img/background-catalog-desktop.jpg");
     width: 245px;
     height: 289px;
     margin-top: 0;
     margin-bottom: 88px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background-catalog-desktop@2x.jpg");
+    }
   }
 }
 
@@ -135,7 +149,7 @@
 
   @media (min-width: @tablet-width) {
     .indent-reset;
-    width: 160px;
+    width: 162px;
     text-align: left;
     margin-left: 423px;
     padding-top: 71px;
