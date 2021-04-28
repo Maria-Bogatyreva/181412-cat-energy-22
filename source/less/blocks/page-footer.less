@@ -44,16 +44,15 @@
 .page-footer__bottom {
   background-color: @basic-grey;
   padding-top: 39px;
+  padding-bottom: 22px;
 }
 
-.social__list {
-  display: flex;
-  list-style: none;
-}
+
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer__bottom-content {
@@ -72,4 +71,10 @@
     width: 570px;
     background-color: @basic-white;
   }
+}
+
+.page-footer__copyright-text {
+  .indent-reset;
+  color: @special_dark-grey;
+  .set-font-size-line-height(16px; 18px);
 }
