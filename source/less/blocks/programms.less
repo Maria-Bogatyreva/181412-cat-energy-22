@@ -32,9 +32,10 @@
   padding: 30px 20px 17px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 53px;
-    padding-bottom: 57px;
-    padding-right: 279px;
+    padding-left: 52px;
+    padding-bottom: 58px;
+    padding-right: 278px;
+    padding-top: 77px;
   }
 
   @media (min-width: @desktop-width) {
@@ -56,8 +57,7 @@
     font-size: 36px;
     line-height: 36px;
     .indent-reset;
-    margin-top: 77px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
@@ -75,6 +75,13 @@
   height: 50px;
   background-color: @basic-green;
   border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: 395px;
+    top: 16px;
+  }
 }
 
 .programms_title--slim::after {
@@ -84,7 +91,15 @@
   left: 9px;
   width: 36px;
   height: 50px;
-  background-image: url("../img/cat-slim-icon.svg");
+  background: url("../img/cat-slim-icon.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 192px;
+    background-size: 140px 192px;
+    top: 3px;
+    left: 424px;
+  }
 }
 
 .programms__title--pro::after {
@@ -94,7 +109,15 @@
   left: -7px;
   width: 67px;
   height: 28px;
-  background-image: url("../img/cat-pro-icon.svg");
+  background: url("../img/cat-pro-icon.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+    background-size: 268px 112px;
+    top: 58px;
+    left: 361px;
+  }
 }
 
 .programms__link {
@@ -109,7 +132,7 @@
   background-color: @basic-grey;
 
   @media (min-width: @tablet-width)  {
-    padding-right: 20px;
+    padding-right: 25px;
     .set-font-size-line-height(20px; 30px);
   }
 }
@@ -125,6 +148,11 @@
   background: url("../img/arrow-icon.svg") no-repeat center;
   transform: translateY(-50%);
   transition: 0.3s;
+
+  @media (min-width: @tablet-width) {
+    top: 47%;
+    width: 44px;
+  }
 }
 
 .programms__link:hover::after {
@@ -141,10 +169,24 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 5px;
+  }
+}
+
+/*Для правильного переноса строки на планшете*/
+.programms__description br {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
