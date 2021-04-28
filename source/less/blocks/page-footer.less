@@ -45,14 +45,21 @@
   background-color: @basic-grey;
   padding-top: 39px;
   padding-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 59px;
+    padding-bottom: 44px;
+  }
 }
-
-
 
 .page-footer__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -13px;
+  }
 }
 
 .page-footer__bottom-content {
@@ -77,4 +84,8 @@
   .indent-reset;
   color: @special_dark-grey;
   .set-font-size-line-height(16px; 18px);
+
+  @media (min-width: @tablet-width) {
+    margin-right: 25px;
+  }
 }
