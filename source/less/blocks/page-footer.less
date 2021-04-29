@@ -34,11 +34,19 @@
   }
 }
 
-.page-footer__logo-caption img {
+.page-footer__logo-image {
   width: 128px;
   height: 24px;
   display: block;
   margin: 0 auto;
+}
+
+.page-footer__logo-caption[href] .page-footer__logo-image:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo-caption[href] .page-footer__logo-image:active {
+  opacity: 0.6;
 }
 
 .page-footer__content {
@@ -65,7 +73,8 @@
   }
 }
 
-.page-footer__copyright {
+.page-footer__copyright-link {
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -100,5 +109,22 @@
 
   @media (min-width: @desktop-width) {
     margin-right: 23px;
+  }
+}
+
+.page-footer__copyright-link-image {
+  fill: #666666;
+}
+
+.page-footer__copyright-link:hover {
+  .page-footer__copyright-link-image {
+    fill: @basic-green;
+  }
+}
+
+.page-footer__copyright-link:active {
+  .page-footer__copyright-text,
+  .page-footer__copyright-link-image {
+    opacity: 0.3;
   }
 }

@@ -63,6 +63,14 @@
   }
 }
 
+.page-header__logo-image[href]:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-image[href]:active {
+  opacity: 0.6;
+}
+
 /*Навигация*/
 .page-header__main-nav {
   @media (min-width: @tablet-width) {
@@ -125,7 +133,7 @@
   }
 }
 /*Корректировка header для ГЛАВНОЙ*/
-.page-header__index .page-header__main-nav-item a {
+.page-header__index .page-header__main-nav-link {
   @media (min-width: @tablet-width) {
     color: @basic-black;
   }
@@ -143,6 +151,14 @@
   @media (min-width: @desktop-width) {
     border-bottom: @white-border;
   }
+}
+
+.page-header__main-nav-link[href]:hover {
+  opacity: 0.6;
+}
+
+.page-header__main-nav-link[href]:active {
+  opacity: 0.3;
 }
 
 /*Стили МОБИЛЬНОГО меню*/
