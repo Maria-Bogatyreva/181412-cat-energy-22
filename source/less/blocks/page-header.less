@@ -1,5 +1,4 @@
-.page-header,
-.page-header__index {
+.page-header {
   @media (min-width: @tablet-width) {
     padding-top: 25px;
   }
@@ -14,11 +13,11 @@
 
 .page-header__index {
   @media (min-width: @tablet-width) {
-    padding-top: 28px;
+    padding-top: 25px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 51px;
+    padding-top: 53px;
   }
 }
 
@@ -31,7 +30,7 @@
     top: 0;
     right: 0;
     width: 50%;
-    height: 695px;
+    height: 693px;
     background-color: #64a83b;
     background-image: url("../img/background-desktop.jpg");
     background-repeat: no-repeat;
@@ -61,6 +60,14 @@
   @media (min-width: @desktop-width) {
     width: 1220px;
   }
+}
+
+.page-header__logo-image[href]:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-image[href]:active {
+  opacity: 0.6;
 }
 
 /*Навигация*/
@@ -125,7 +132,7 @@
   }
 }
 /*Корректировка header для ГЛАВНОЙ*/
-.page-header__index .page-header__main-nav-item a {
+.page-header__index .page-header__main-nav-link {
   @media (min-width: @tablet-width) {
     color: @basic-black;
   }
@@ -143,6 +150,14 @@
   @media (min-width: @desktop-width) {
     border-bottom: @white-border;
   }
+}
+
+.page-header__main-nav-link[href]:hover {
+  opacity: 0.6;
+}
+
+.page-header__main-nav-link[href]:active {
+  opacity: 0.3;
 }
 
 /*Стили МОБИЛЬНОГО меню*/

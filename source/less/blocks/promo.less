@@ -1,12 +1,12 @@
 .promo {
   position: relative;
   color: @basic-white;
-  height: 473px;
   background-image: url("../img/background-img.jpg"); //зеленый кот
   background-repeat: no-repeat;
   background-position-y: 0;
   background-position-x: center;
   padding-top: 27px;
+  padding-bottom: 22px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/background-img@2x.jpg");
@@ -14,15 +14,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    height: 809px;
+    height: 866px;
     background-image: none;
     color: @basic-black;
-    padding-top: 55px;
+    padding-top: 57px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 530px;
-    padding-top: 110px;
+    height: 643px;
+    padding-top: 111px;
   }
 }
 
@@ -136,5 +136,13 @@
 
   @media (min-width: @desktop-width) {
     margin-left: 0;
+  }
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }

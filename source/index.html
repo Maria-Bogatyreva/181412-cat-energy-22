@@ -45,13 +45,13 @@
           <nav class="page-header__main-nav">
             <ul class="page-header__main-nav-list">
               <li class="page-header__main-nav-item page-header__main-nav-item--active">
-                <a>Главная</a>
+                <a class="page-header__main-nav-link">Главная</a>
               </li>
               <li class="page-header__main-nav-item">
-                <a href="catalog.html">Каталог продукции</a>
+                <a  class="page-header__main-nav-link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="page-header__main-nav-item">
-                <a href="form.html">Подбор программы</a>
+                <a  class="page-header__main-nav-link" href="form.html">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -67,6 +67,9 @@
               <h2 class="promo__title">Функциональное питание для котов</h2>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
               <picture>
+                <source type="image/webp" media="(min-width: 1220px)" srcset="img/promo-image-desktop.webp 1x, img/promo-image-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/promo-image-tablet.webp 1x, img/promo-image-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/promo-image.webp 1x, img/promo-image@2x.webp 2x">
                 <source media="(min-width: 1220px)" srcset="img/promo-image-desktop.png 1x, img/promo-image-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/promo-image-tablet.png 1x, img/promo-image-tablet@2x.png 2x">
                 <img class="promo__image" src="img/promo-image.png" srcset="img/promo-image@2x.png 2x" alt="Питание для котов">
@@ -81,13 +84,13 @@
             <h3 class="visually-hidden">Каталог программ</h3>
             <ul class="programms__list">
               <li class="programms__item">
-                <h4 class="programms__title programms_title--weight-down">Похудение</h4>
+                <h4 class="programms__title programms_title--slim">Похудение</h4>
                 <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="programms__link" href="catalog.html">каталог slim</a>
               </li>
               <li class="programms__item">
-                <h4 class="programms__title programms__title--weight-up">Набор массы</h4>
-                <p class="programms__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <h4 class="programms__title programms__title--pro">Набор массы</h4>
+                <p class="programms__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br>мышцы!</p>
                 <a class="programms__link" href="catalog.html">каталог pro</a>
               </li>
             </ul>
@@ -132,7 +135,7 @@
                   </div>
 
                   <div class="demonstration__item--cost">
-                    <span class="demonstration__parameter--cost">Затраты на питание:  </span>
+                    <span class="demonstration__parameter--cost">Затраты на питание:&nbsp;</span>
                     <span class="demonstration__value--cost">15 000 РУБ.</span>
                   </div>
                 </div>
@@ -177,7 +180,7 @@
           </div>
         </div>
 
-        <div class="map" style="overflow: hidden; height: 362px;">
+        <div class="map" style="overflow: hidden;">
           <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617980898292!5m2!1sru!2sru"
           allowfullscreen=""
           loading="lazy"
@@ -188,27 +191,42 @@
         <div class="page-footer__bottom">
           <div class="wrapper page-footer__bottom-content">
             <a class="page-footer__logo-caption">
-              <img src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="101" height="18">
+              <img class="page-footer__logo-image" src="img/logo-slogan.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
             </a>
             <div class="page-footer__social social">
               <ul class="social__list">
                 <li class="social__item">
-                  <a class="social__link social__link--vk" href="#">Мы в Контакте</a>
+                  <a class="social__link social__link--vk" href="#">
+                    <svg  class="social__icon" width="23" height="16">
+                      <use xlink:href="img/sprite.svg#icon-vk"></use>
+                    </svg>
+                    <span class="visually-hidden">Мы в Контакте</span>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--instagram" href="#">Мы в Instagram</a>
+                  <a class="social__link social__link--instagram" href="#">
+                    <svg  class="social__icon" width="16" height="16" viewBox="0 0 23 23">
+                      <use xlink:href="img/sprite.svg#icon-insta"></use>
+                    </svg>
+                    <span class="visually-hidden">Мы в Instagram</span>
+                  </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link--facebook" href="#">Мы в Facebook</a>
+                  <a class="social__link social__link--facebook" href="#">
+                    <svg class="social__icon social__icon--facebook" width="22" height="22" viewBox="0 0 28 33">
+                      <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                    <span class="visually-hidden">Мы в Facebook</span>
+                  </a>
                 </li>
               </ul>
             </div>
-            <div class="page-footer__copyright copyright">
-              <p class="copyright__text">HTML Academy</p>
-              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-                <img class="copyright__link-image" src="img/logo_htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+              <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span class="page-footer__copyright-text">HTML Academy</span>
+                <svg class="page-footer__copyright-link-image" width="27" height="34" viewBox="0 0 27 34">
+                  <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+                </svg>
               </a>
-            </div>
           </div>
         </div>
       </footer>

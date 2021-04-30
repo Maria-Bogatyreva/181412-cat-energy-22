@@ -7,7 +7,7 @@
 
   @media (min-width: @desktop-width) {
     margin-top: 20px;
-    margin-bottom: 71px;
+    margin-bottom: 73px;
   }
 }
 
@@ -29,44 +29,162 @@
 
 .programms__item {
   background-color: @basic-grey;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 17px;
+  padding: 30px 20px 17px;
 
   @media (min-width: @tablet-width) {
-    padding-left: 53px;
-    padding-bottom: 57px;
-    padding-right: 279px;
+    padding-left: 52px;
+    padding-bottom: 58px;
+    padding-right: 278px;
+    padding-top: 77px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 0;
+    padding-right: 50px;
   }
 }
 
 .programms__title {
+  position: relative;
   text-transform: uppercase;
   .indent-reset;
   .oswald-regular;
   color: @basic-black;
-  font-size: 24px;
-  line-height: 37px;
-  margin-top: 30px;
+  .set-font-size-line-height(24px; 37px);
   margin-bottom: 29px;
-  margin-left: 70px;
+  padding-left: 70px;
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
     .indent-reset;
-    margin-top: 77px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 161px;
+    padding-left: 161px;
     margin-bottom: 75px;
   }
+}
+
+.programms__title::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 3px;
+  width: 50px;
+  height: 50px;
+  background-color: @basic-green;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: 395px;
+    top: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: -28px;
+    left: 0;
+  }
+}
+
+.programms_title--slim::after {
+  content: "";
+  position: absolute;
+  top: -11px;
+  left: 9px;
+  width: 36px;
+  height: 50px;
+  background: url("../img/cat-slim-icon.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 140px;
+    height: 192px;
+    background-size: 140px 192px;
+    top: 3px;
+    left: 424px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 70px;
+    height: 97px;
+    background-size: 70px 97px;
+    top: -34px;
+    left: 16px;
+  }
+}
+
+.programms__title--pro::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -7px;
+  width: 67px;
+  height: 28px;
+  background: url("../img/cat-pro-icon.svg") no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 268px;
+    height: 112px;
+    background-size: 268px 112px;
+    top: 58px;
+    left: 361px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 134px;
+    height: 56px;
+    background-size: 134px 56px;
+    top: -9px;
+    left: -19px;
+  }
+}
+
+.programms__link {
+  position: relative;
+  padding-right: 14px;
+  z-index: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  .set-font-size-line-height(16px; 16px);
+  .oswald-regular;
+  color: @basic-black;
+  background-color: @basic-grey;
+  transition: 0.3s;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 25px;
+    .set-font-size-line-height(20px; 30px);
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.programms__link::after {
+  content: "";
+  position: absolute;
+  z-index: -100;
+  right: -28px;
+  top: 44%;
+  width: 37px;
+  height: 12px;
+  background: url("../img/arrow-icon.svg") no-repeat center;
+  transform: translateY(-50%);
+  transition: 0.3s;
+
+  @media (min-width: @tablet-width) {
+    top: 47%;
+    width: 44px;
+  }
+}
+
+.programms__link:hover::after {
+  right: -36px;
 }
 
 .programms__description {
@@ -79,7 +197,8 @@
   @media (min-width: @tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 29px;
+    margin-bottom: 30px;
+    border: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -87,16 +206,15 @@
   }
 }
 
-.programms__link {
-  text-transform: uppercase;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 16px;
-  .oswald-regular;
-  color: @basic-black;
+/*Для правильного переноса строки на планшете*/
+.programms__description br {
+  display: none;
 
   @media (min-width: @tablet-width) {
-    font-size: 20px;
-    line-height: 30px;
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }
