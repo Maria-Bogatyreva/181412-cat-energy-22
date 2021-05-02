@@ -11,7 +11,7 @@
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
-      <header class="page-header page-header__menu-closed">
+      <header class="page-header page-header__menu-opened">
         <div class="page-header__wrapper">
           <div class="page-header__top">
               <a href="index.html" class="page-header__logo-image">
@@ -118,11 +118,17 @@
                   <li class="form__line">
                     <label class="form__label" for="owner-email">E-mail:*</label>
                     <input class="form__input form__input--email" type="text" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+                    <svg class="form__input-icon" width="21" height="19">
+                      <use xlink:href="img/sprite.svg#mail"></use>
+                    </svg>
                   </li>
 
                   <li class="form__line">
                     <label class="form__label" for="owner-tel">Телефон:*</label>
                     <input class="form__input form__input--tel" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
+                    <svg class="form__input-icon" width="20" height="20">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
                   </li>
                 </ul>
               </div>
