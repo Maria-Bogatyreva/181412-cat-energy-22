@@ -145,8 +145,9 @@
 }
 
 .product__title--view-more {
+  position: relative;
   width: 100%;
-  margin-top: 80px;
+  padding-top: 80px;
   margin-bottom: 7px;
 
   @media (min-width: @tablet-width) {
@@ -160,6 +161,23 @@
   @media (min-width: @desktop-width) {
     .indent-reset;
   }
+}
+
+.product__title--view-more::before,
+.product__title--view-more::after {
+  position: absolute;
+  content: "";
+  top: 39px;
+  left: 86px;
+  width: 30px;
+  height: 2px;
+  background-color: red;
+
+  //background-color:#d3d3d3;
+}
+
+.product__title--view-more::after {
+  transform: rotate(90deg);
 }
 
 .product__text--view-more {
