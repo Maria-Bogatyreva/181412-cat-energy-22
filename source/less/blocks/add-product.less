@@ -42,30 +42,47 @@
 .add-product__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
   .set-font-size-line-height(14px; 20px);
 
   @media (min-width: @tablet-width) {
     .set-font-size-line-height(16px; 20px);
     width: auto;
     .indent-reset;
+    margin-top: 4px;
+    justify-content: flex-end;
   }
 
   @media (min-width: @desktop-width) {
-    width: 288px;
+    width: 300px;
+    margin-left: auto;
+    justify-content: flex-start;
   }
 }
 
-.add-product__amount,
 .add-product__price {
   .indent-reset;
-}
 
-.add-product__price {
   @media (min-width: @tablet-width) {
-    margin-left: 50px;
+    width: 93px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    width: 20%;
   }
 }
+
+.add-product__amount {
+  .indent-reset;
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+    width: 80%;
+  }
+}
+
 
 /*Кнопка заказать*/
 .add-product__button {
@@ -81,5 +98,6 @@
   @media (min-width: @desktop-width) {
     width: 244px;
     margin: 0;
+    margin-left: 26px;
   }
 }
