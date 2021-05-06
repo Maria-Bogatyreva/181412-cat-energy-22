@@ -1,7 +1,0 @@
-<svg id="mail" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <line x1="0.65" y1="5.77496" x2="0.65" y2="13.775" stroke-width="1.3"/>
-  <line x1="17.65" y1="5.77496" x2="17.65" y2="13.775" stroke-width="1.3"/>
-  <line y1="13.125" x2="18" y2="13.125" stroke-width="1.3"/>
-  <line y1="1.12496" x2="18" y2="1.12496" stroke-width="1.3"/>
-  <path d="M17.35 2.95706L9.00002 9.4515L0.65 2.95706V1.42496H3.5L9.00002 1.42496H14H17.35V2.95706Z" stroke-width="1.3"/>
-</svg>
