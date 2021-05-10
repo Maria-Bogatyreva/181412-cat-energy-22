@@ -86,12 +86,12 @@
             <h3 class="visually-hidden">Каталог программ</h3>
             <ul class="programms__list">
               <li class="programms__item">
-                <h4 class="programms__title programms_title--slim">Похудение</h4>
+                <h3 class="programms__title programms_title--slim">Похудение</h3>
                 <p class="programms__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
                 <a class="programms__link" href="catalog.html">каталог slim</a>
               </li>
               <li class="programms__item">
-                <h4 class="programms__title programms__title--pro">Набор массы</h4>
+                <h3 class="programms__title programms__title--pro">Набор массы</h3>
                 <p class="programms__description">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br>мышцы! </p>
                 <a class="programms__link" href="catalog.html">каталог pro</a>
               </li>
@@ -146,18 +146,24 @@
               <div class="demonstration__slider slider">
                 <div class="slider__wrapper">
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/before-mobile.webp 1x, img/before-mobile@2x.webp 2x">
+
                     <source media="(min-width: 768px)" srcset="img/before-tablet.png 1x, img/before-tablet@2x.png 2x">
                     <img class="slider__img slider__img--before " src="img/before-mobile.png" srcset="img/before-mobile@2x.png" alt="Толстый кот" width="311" height="232">
                   </picture>
 
                   <picture>
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet.webp 1x, img/before-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/after-mobile.webp 1x, img/after-mobile@2x.webp 2x">
+
                     <source media="(min-width: 768px)" srcset="img/after-tablet.png 1x, img/after-tablet@2x.png 2x">
                     <img class="slider__img slider__img--after slider__img--hide" src="img/after-mobile.png" srcset="img/after-mobile@2x.png" alt="Худой кот" width="240" height="251">
                   </picture>
                 </div>
 
               <div class="slider__buttons">
-                <button class="slider__button slider__toggle--active" type="button">Было</button>
+                <button class="slider__button slider__button--before" type="button">Было</button>
 
                 <div class="slider__toggle">
                   <span></span>
@@ -167,7 +173,7 @@
                   <div class="slider__scale-bar"></div>
                 </div>
 
-                <button class="slider__button" type="button">Стало</button>
+                <button class="slider__button slider__button--after" type="button">Стало</button>
               </div>
             </div>
           </div>
