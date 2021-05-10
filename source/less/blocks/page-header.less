@@ -59,16 +59,6 @@
 }
 
 /*Навигация*/
-.page-header__main-nav {
-  @media (min-width: @tablet-width) {
-    //min-width: 440px;
-  }
-
-  @media (min-width: @desktop-width) {
-    //min-width: 478px;
-  }
-}
-
 .page-header__main-nav-list {
   height: 100%;
   list-style: none;
@@ -79,9 +69,19 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 6px;
+  }
+}
+
+.page-header__main-nav-item {
+  @media (min-width: @tablet-width) {
+    margin-left: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 33px;
   }
 }
 
