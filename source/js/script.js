@@ -1,7 +1,7 @@
 const pageHeader = document.querySelector('.page-header');
 const navToggle = pageHeader.querySelector('.page-header__toggle');
 
-pageHeader.classList.remove('page-header__menu-opened');
+pageHeader.classList.remove('page-header__menu-no-js');
 pageHeader.classList.add('page-header__menu-closed');
 
 navToggle.addEventListener('click', function() {
