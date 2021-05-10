@@ -30,5 +30,3 @@ btnBefore.addEventListener('click', function () {
   imgAfter.classList.add('slider__img--hide');
   imgBefore.classList.remove('slider__img--hide');
 });
-
-
