@@ -29,12 +29,12 @@
               </a>
 
               <button class="page-header__toggle" type="button">
-                <svg class="page-header__toggle--cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="page-header__toggle page-header__toggle--cross" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 -0.727046 0.686589 0.727046 2.00171 20)" stroke="black" stroke-width="1.5"/>
                   <line y1="-0.75" x2="24.7577" y2="-0.75" transform="matrix(0.686589 0.727046 -0.686589 0.727046 1 2)" stroke="black" stroke-width="1.5"/>
                 </svg>
 
-                <svg class="page-header__toggle--burger" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="page-header__toggle page-header__toggle--burger" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
                   <line y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
                   <line y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
@@ -60,7 +60,7 @@
       </header>
 
     <main class="page-main">
-      <div class="wrapper--form">
+      <div class="wrapper wrapper--form">
         <h1 class="page-main__title">Подбор программы</h1>
         <p class="page-main__content">Заполните анкету, и мы подберем <br> программу  питания для вашего кота</p>
       </div>
@@ -94,17 +94,17 @@
 
                   <ul class="form__list form__list--programm">
                     <li class="form__line">
-                      <input class="form__input-radio visually-hidden" type="radio" id="weight-down" name="program"  value="weight-down" checked>
+                      <input class="form__input form__input-radio visually-hidden" type="radio" id="weight-down" name="program"  value="weight-down" checked>
                       <label class="form__label form__label--radio" for="weight-down" tabindex="0">Похудение</label>
                     </li>
 
                     <li class="form__line">
-                      <input class="form__input-radio visually-hidden" type="radio" id="weight-up" name="program"  value="weight-up">
+                      <input class="form__input form__input-radio visually-hidden" type="radio" id="weight-up" name="program"  value="weight-up">
                       <label class="form__label form__label--radio" for="weight-up" tabindex="0">Набор массы</label>
                     </li>
 
                     <li class="form__line">
-                      <input class="form__input-radio visually-hidden" type="radio" id="unknown" name="program"  value="unknown">
+                      <input class="form__input form__input-radio visually-hidden" type="radio" id="unknown" name="program"  value="unknown">
                       <label  class="form__label form__label--radio" for="unknown" tabindex="0">Не знаю (Нужен ваш совет)</label>
                     </li>
                   </ul>
@@ -112,7 +112,7 @@
             </div>
             <!-- КОНТАКТНЫЕ ДАННЫЕ ВЛАДЕЛЬЦА КОТА-->
             <fieldset class="form__fieldset form__owner-info">
-              <div class="wrapper--form">
+              <div class="wrapper wrapper--form">
                 <h3 class="form__legend">Контактные данные (владельца кота)</h3>
                 <ul class="form__list form__list--owner-info">
 
@@ -136,7 +136,7 @@
             </fieldset>
             <!-- КОММЕНТАРИЙ-->
             <fieldset class="form__fieldset form__comment">
-              <div class="wrapper--form">
+              <div class="wrapper wrapper--form">
                 <h3 class="form__legend">Комментарий</h3>
 
                 <label class="visually-hidden" for="comment">Расскажите обо всех повадках кота</label>
@@ -145,27 +145,27 @@
             </fieldset>
             <!-- ДОПОЛНИТЕЛЬНО-->
             <fieldset class="form__fieldset form__additional">
-              <div class="wrapper--form">
+              <div class="wrapper wrapper--form">
                 <h3 class="form__legend">Дополнительно</h3>
 
                 <ul class="form__list form__list--additional">
                   <li class="form__line">
-                    <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional" id="sweetener" value="sweetener" checked>
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="additional" id="sweetener" value="sweetener" checked>
                     <label class="form__label form__label--checkbox" for="sweetener" tabindex="0">Сахарозаменитель</label>
                   </li>
 
                   <li class="form__line">
-                    <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional" id="water" value="water">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="additional" id="water" value="water">
                     <label class="form__label form__label--checkbox" for="water" tabindex="0">Питьевая вода</label>
                   </li>
 
                   <li class="form__line">
-                    <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional" id="milk" value="milk">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="additional" id="milk" value="milk">
                     <label class="form__label form__label--checkbox" for="milk" tabindex="0">Молоко</label>
                   </li>
 
                   <li class="form__line">
-                    <input class="form__input--checkbox visually-hidden" type="checkbox" name="additional" id="vitamin" value="vitamin">
+                    <input class="form__input form__input--checkbox visually-hidden" type="checkbox" name="additional" id="vitamin" value="vitamin">
                     <label class="form__label form__label--checkbox" for="vitamin" tabindex="0">Витамины</label>
                   </li>
                 </ul>
