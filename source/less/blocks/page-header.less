@@ -85,7 +85,7 @@
   }
 }
 
-.page-header__main-nav-item a {
+.page-header__main-nav-link {
   display: block;
   padding-top: 22px;
   padding-bottom: 24px;
@@ -112,9 +112,10 @@
   }
 }
 
-.page-header__main-nav-item--active a {
+.page-header__main-nav-link--active {
   @media (min-width: @tablet-width) {
     border-bottom: @green-border;
+    padding-bottom: 6px;
   }
 }
 /*Корректировка header для ГЛАВНОЙ*/
@@ -128,7 +129,7 @@
   }
 }
 
-.page-header--index .page-header__main-nav-item--active a {
+.page-header--index .page-header__main-nav-link--active {
   @media (min-width: @tablet-width) {
     border-bottom: @green-border;
   }
