@@ -191,11 +191,22 @@
 
 
         <div class="map" style="overflow: hidden;">
-          <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617980898292!5m2!1sru!2sru"
+          <iframe class="map__iframe map__iframe--none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1617980898292!5m2!1sru!2sru"
           allowfullscreen=""
           loading="lazy"
           height="662"
           style="border:0; margin-top: -150px;"></iframe>
+          <div class="map__img">
+            <picture>
+              <source type="image/webp" media="(min-width: 1220px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+
+              <source media="(min-width: 1220px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+              <img src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" alt="Наш адрес: ул. Большая Конюшенная, д. 19/8, Санкт-Петербург" width="320" height="382">
+            </picture>
+          </div>
         </div>
 
         <div class="page-footer__bottom">

@@ -21,12 +21,22 @@ const btnAfter = document.querySelector('.slider__button--after');
 const imgBefore = document.querySelector('.slider__img--before');
 const imgAfter = document.querySelector('.slider__img--after');
 
-btnAfter.addEventListener('click', function () {
-  imgBefore.classList.add('slider__img--hide');
-  imgAfter.classList.remove('slider__img--hide');
-});
+if (btnAfter) {
+  btnAfter.addEventListener('click', function () {
+    imgBefore.classList.add('slider__img--hide');
+    imgAfter.classList.remove('slider__img--hide');
+  });
+}
 
-btnBefore.addEventListener('click', function () {
-  imgAfter.classList.add('slider__img--hide');
-  imgBefore.classList.remove('slider__img--hide');
-});
+if (btnBefore) {
+  btnBefore.addEventListener('click', function () {
+    imgAfter.classList.add('slider__img--hide');
+    imgBefore.classList.remove('slider__img--hide');
+  });
+}
+
+/*Карта*/
+const mapIframe = document.querySelector('.map__iframe');
+const mapImg = document.querySelector('.map__img');
+
+mapIframe.classList.remove("map__iframe--none");
