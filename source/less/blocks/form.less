@@ -73,12 +73,6 @@
     padding: 7px 0 6px 59px;
   }
 
-  &:focus-visible {
-    outline: 2px solid black;
-    outline-offset: 3px;
-    outline-style: auto;
-  }
-
   &:hover {
     cursor: pointer;
   }
@@ -126,6 +120,12 @@
   }
 }
 
+.form__input-radio:focus-visible + label::before {
+  outline: 2px solid black;
+  outline-offset: 3px;
+  outline-style: auto;
+}
+
 /*Стилизация checkbox*/
 .form__label--checkbox {
   color: @special-dark-grey-2;
@@ -136,12 +136,6 @@
   @media (min-width: @tablet-width) {
     padding: 7px 0 6px 59px;
   }
-}
-
-.form__label--checkbox:focus-visible {
-  outline: 2px solid black;
-  outline-offset: 3px;
-  outline-style: auto;
 }
 
 .form__label--checkbox::before {
@@ -185,6 +179,12 @@
     width: 9px;
     height: 17px;
   }
+}
+
+.form__input--checkbox:focus-visible + label::before {
+  outline: 2px solid black;
+  outline-offset: 3px;
+  outline-style: auto;
 }
 
 /*Текстовые инпуты*/
