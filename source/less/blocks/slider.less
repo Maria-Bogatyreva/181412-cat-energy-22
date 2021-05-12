@@ -1,12 +1,20 @@
 .slider {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider__images {
+  width: 320px;
+  height: 240px;
 }
 
 /*Картинки*/
-.slider__img {
-  display: block;
-  margin: 0 auto;
-}
+// .slider__img {
+//   display: block;
+//   margin: 0 auto;
+// }
 
 .slider__img--hide {
   display: none;
@@ -34,10 +42,12 @@
 
 /*Кнопки*/
 .slider__buttons {
-  margin-top: 28px;
+  //margin-top: 28px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  align-self: stretch;
+  padding: 25px 39px 0px 43px;
 
   @media (min-width: @tablet-width) {
     margin-top: 15px;
@@ -51,7 +61,7 @@
 
 .slider__button {
   .indent-reset;
-  margin: 1px 6px;
+  //margin: 1px 6px;
   border: none;
   background-color: @basic-grey-2;
   .oswald-regular;
@@ -85,8 +95,8 @@
   border: @grey-border-2;
   border-radius: 6px;
   padding: 3px 5px;
-  margin-right: 10px;
-  margin-left: 10px;
+  //margin-right: 10px;
+  //margin-left: 10px;
 
   @media (min-width: @tablet-width) {
     display: none;
